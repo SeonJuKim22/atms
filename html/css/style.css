@@ -360,7 +360,7 @@ ol.num > li:before{position:absolute;left:0;top:0;z-index:11;display:inline-bloc
 /* 기본게시판 list */
 .bbs_table.list tbody tr:hover{background-color:#e2fff8;}
 .bbs_table.list td{text-align:center;}
-
+.bbs_table.list tbody tr:first-child td {border-top:0 none;}
 /* 기본게시판 write */
 .bbs_table.write thead ~ tbody th,.bbs_table.write thead ~ tfoot th{padding-left:20px;text-align:left;}
 .exactly{display:none;position:relative;vertical-align:middle;overflow:hidden;}
