@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\HANA-메인작업본"
+		}
+	],
+	"settings": {
+		"liveServer.settings.host": "192.168.219.100:5500"
+	}
+}
