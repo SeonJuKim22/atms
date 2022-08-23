@@ -360,6 +360,7 @@ ol.num > li:before{position:absolute;left:0;top:0;z-index:11;display:inline-bloc
 /* 기본게시판 list */
 .bbs_table.list tbody tr:hover{background-color:#e2fff8;}
 .bbs_table.list td{text-align:center;}
+.bbs_table.list tbody tr:first-child td {border-top:0 none;}
 
 /* 기본게시판 write */
 .bbs_table.write thead ~ tbody th,.bbs_table.write thead ~ tfoot th{padding-left:20px;text-align:left;}
@@ -455,7 +456,7 @@ textarea.bbs_content{padding:0.5rem;}
 .bbs_popup .title_area  h1::before, .bbs_popup .title_area  h1:after {display:inline-block; content:''; position: absolute; border-radius: 100px;;} 
 .bbs_popup .title_area  h1::before {left:0; top:calc(50% - 10px); width:20px; height:20px; background-color: #fff;}
 .bbs_popup .title_area  h1:after {left:5px; top:6px; width:10px; height:10px; background-color: #666;; }
-.bbs_popup .contents_area{max-height:calc(90vh - 50px);padding:20px;box-sizing:border-box;overflow-y:auto;}
+.bbs_popup .contents_area{max-height:calc(90vh - 70px);padding:20px;box-sizing:border-box;overflow-y:auto;}
 .bbs_popup .contents_area .inner{padding-bottom: 70px;;}
 .bbs_popup .bbs_search table {margin-top:0;}
 /*.bbs_popup .close{position:absolute;right:0;top:0;display:inline-block;width:50px;height:50px;padding:0;margin:0;color:transparent;overflow:hidden;}
