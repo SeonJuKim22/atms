@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력" >
+    <meta name="description" content="사이트 상세설명">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/import.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/style.js"></script>
+    <title>[운영관리 메뉴명] - NH투자증권 ATMS</title>
+</head>
+
+<body id="sub">
+<div class="accessibility">
+    <a href="#contents">본문 바로가기</a>
+</div>
+
+<hr>
+
+<header id="header">
+    <div class="wrap">
+        <h1 class="logo"><span>라이나생명</span></h1>
+        <div class="gnb_box">
+			<h2 class="skip">사용자 로그인</h2>
+            <ul class="clearfix">
+			<li><a href="">개인정보</a></li>
+			<li><a href="">로그아웃</a></li>
+			</ul>
+        </div>
+		<!-- //gnb -->
+
+		<nav id="lnb_box">
+			<h2 class="skip">주메뉴</h2>
+			<div id="lnb">
+				<ul class="clearfix"><!-- 현재 선택된 메뉴에 클래스 on 추가 -->
+					<li class="depth1"><a href="">관리자관리</a></li>
+					<li class="depth1"><a href="" class="on">회원관리</a></li>
+					<li class="depth1"><a href="">사이버창구</a></li>
+					<li class="depth1"><a href="">보험상품관리</a></li>
+					<li class="depth1"><a href="">홈페이지관리</a></li>
+					<li class="depth1"><a href="">통계관리</a></li>
+					<li class="depth1"><a href="">모바일관리</a></li>
+					<li class="depth1"><a href="">상품몰관리(mall)</a></li>
+					<li class="depth1"><a href="">Chatbot</a></li>
+					<li class="depth1"><a href="">보장분석관리</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- //lnb -->
+    </div>
+</header>
+<!-- //header -->
+
+<hr>
+
+<div id="container">
+    <div class="wrap">
+        <div id="side">
+			<div class="side_title"><span>상품몰관리(mall)</span></div>
+            <nav class="side_menu">
+                <h2 class="skip">서브메뉴</h2>
+                <ul class="dep1">
+                <li><a href="">사고보험금재처리</a></li>
+                <li><a href="">고객정보변경</a></li>
+                <li><a href="">납입정보변경</a></li>
+                <li><a href="">사고보험금 상담신청_담당자 지정</a></li>
+                </ul>
+            </nav>
+            <!-- //side_menu -->
+        </div>
+        <!-- //side -->
+
+        <main class="colgroup" id="colgroup">
+            <article>
+                <header class="sub_head">
+                    <div class="sub_title"><h2>납입정보 변경</h2></div><!-- 현재 페이지 메뉴 -->
+					<div class="path">
+						<span class="home">HOME</span>
+						<span>사이버창구</span>
+						<strong>납입정보 변경신청</strong>
+					</div>
+                </header>
+
+                <div id="contents">
+
+
+<form name="" id="" method="post">
+<fieldset>
+<legend>게시물 작성</legend>
+	<p class="bbs_unit"><span class="exactly y"></span>표시는 필수 입력사항입니다.</p>
+	<table class="bbs_table write"><!-- 등록/수정 게시판 클래스 write 추가 -->
+		<caption>{게시판이름} 글쓰기 - 제목, 작성자, 내용, 첨부파일, 이미지첨부파일의 대체텍스트 입력</caption>
+		<colgroup>
+			<col style="width:200px;">
+			<col>
+		</colgroup>
+		<tbody>
+		<tr>
+			<th scope="row"><label for="">제목</label><span class="exactly y"></span></th><!-- 필수 입력사항일 경우 클래스 y 추가 -->
+			<td class="subject"><input type="text" name="" id=""  placeholder="제목 입력"></td><!-- 클래스 subject 가로 100% -->
+		</tr>
+		<tr>
+			<th scope="row"><label for="">인풋</label><span class="exactly y"></span></th>
+			<td><input type="text" name="" id=""  placeholder="인풋 입력"></td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="">인풋 + 설명글</label><span class="exactly y"></span></th>
+			<td>
+				<input type="text" name="" id=""  placeholder="인풋 입력">
+				<p class="explain">설명글 필요할 경우 사용</p>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="">셀렉트</label><span class="exactly y"></span></th>
+			<td>
+				<select name="" id="" title="셀렉트 선택">
+					<option value="선택">선택</option>
+					<option value="선택2">선택2</option>
+					<option value="선택3">선택3</option>
+					<option value="선택4">선택4</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">라디오박스<span class="exactly y"></span></th>
+			<td>
+				<span class="checkbox">
+					<input type="radio" name="100" id="101">
+					<label for="101">아이템</label>
+				</span>
+				<span class="checkbox">
+					<input type="radio" name="100" id="102">
+					<label for="102">아이템</label>
+				</span>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">라디오박스 + 버튼<span class="exactly y"></span></th>
+			<td>
+				<span class="checkbox">
+					<input type="radio" name="110" id="111">
+					<label for="111"><span class="bbs_btn small">아이템</span></label>
+				</span>
+				<span class="checkbox">
+					<input type="radio" name="110" id="112">
+					<label for="112"><span class="bbs_btn gray small">아이템</span></label>
+				</span>
+				<span class="checkbox">
+					<input type="radio" name="110" id="113">
+					<label for="113"><span class="bbs_btn blue small">아이템</span></label>
+				</span>
+				<span class="checkbox">
+					<input type="radio" name="110" id="114">
+					<label for="114"><span class="bbs_btn green small">아이템</span></label>
+				</span>
+				<span class="checkbox">
+					<input type="radio" name="110" id="115">
+					<label for="115"><span class="bbs_btn yellow small">아이템</span></label>
+				</span>
+				<span class="checkbox">
+					<input type="radio" name="110" id="116">
+					<label for="116"><span class="bbs_btn orange small">아이템</span></label>
+				</span>
+				<span class="checkbox">
+					<input type="radio" name="110" id="117">
+					<label for="117"><span class="bbs_btn red small">아이템</span></label>
+				</span>
+				<span class="checkbox">
+					<input type="radio" name="110" id="118">
+					<label for="118"><span class="bbs_btn purple small">아이템</span></label>
+				</span>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">체크박스<span class="exactly y"></span></th>
+			<td>
+				<span class="checkbox">
+					<input type="checkbox" name="120" id="121">
+					<label for="121">아이템</label>
+				</span>
+				<span class="checkbox">
+					<input type="checkbox" name="" id="122">
+					<label for="122">아이템</label>
+				</span>
+				<span class="checkbox">
+					<input type="checkbox" name="" id="123">
+					<label for="123">아이템</label>
+				</span>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">체크박스 + 버튼<span class="exactly y"></span></th>
+			<td>
+				<span class="checkbox">
+					<input type="checkbox" name="130" id="131">
+					<label for="131"><span class="bbs_btn small">아이템</span></label>
+				</span>
+				<span class="checkbox">
+					<input type="checkbox" name="130" id="132">
+					<label for="132"><span class="bbs_btn gray small">아이템</span></label>
+				</span>
+				<span class="checkbox">
+					<input type="checkbox" name="130" id="133">
+					<label for="133"><span class="bbs_btn blue small">아이템</span></label>
+				</span>
+				<span class="checkbox">
+					<input type="checkbox" name="130" id="134">
+					<label for="134"><span class="bbs_btn green small">아이템</span></label>
+				</span>
+				<span class="checkbox">
+					<input type="checkbox" name="130" id="135">
+					<label for="135"><span class="bbs_btn yellow small">아이템</span></label>
+				</span>
+				<span class="checkbox">
+					<input type="checkbox" name="130" id="136">
+					<label for="136"><span class="bbs_btn orange small">아이템</span></label>
+				</span>
+				<span class="checkbox">
+					<input type="checkbox" name="130" id="137">
+					<label for="137"><span class="bbs_btn red small">아이템</span></label>
+				</span>
+				<span class="checkbox">
+					<input type="checkbox" name="130" id="138">
+					<label for="138"><span class="bbs_btn purple small">아이템</span></label>
+				</span>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">키워드<span class="exactly y"></span></th>
+			<td>
+				<select name="" id="" title="카테고리 선택">
+					<option value="카테고리 선택">카테고리 선택</option>
+					<option value="카테고리 선택2">카테고리 선택</option>
+					<option value="카테고리 선택3">카테고리 선택</option>
+					<option value="카테고리 선택4">카테고리 선택</option>
+				</select>
+				<select name="" id="" title="카테고리 선택">
+					<option value="카테고리 선택">카테고리 선택</option>
+					<option value="카테고리 선택2">카테고리 선택</option>
+					<option value="카테고리 선택3">카테고리 선택</option>
+					<option value="카테고리 선택4">카테고리 선택</option>
+				</select>
+				<button type="button" class="bbs_btn type01 small">키워드 추가</button>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">처리상태<span class="exactly y"></span></th>
+			<td>
+				<select name="" id="" title="카테고리 선택">
+					<option value="카테고리 선택">카테고리 선택</option>
+					<option value="카테고리 선택2">카테고리 선택</option>
+					<option value="카테고리 선택3">카테고리 선택</option>
+					<option value="카테고리 선택4">카테고리 선택</option>
+				</select>
+				<span class="checkbox">
+					<input type="radio" name="200" id="201">
+					<label for="201">전송</label>
+				</span>
+				<span class="checkbox">
+					<input type="radio" name="200" id="202" checked>
+					<label for="202">전송안함</label>
+				</span>
+				<p class="explain">처리상태를 <strong>답변완료</strong>로 변경하고 전송으로 등록하는 경우 점수고객에게 이메일이 전송됩니다.</p>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">타겟<span class="exactly y"></span></th>
+			<td>
+				<select name="" id="" title="카테고리 선택">
+					<option value="카테고리 선택">카테고리 선택</option>
+					<option value="카테고리 선택2">카테고리 선택</option>
+					<option value="카테고리 선택3">카테고리 선택</option>
+					<option value="카테고리 선택4">카테고리 선택</option>
+				</select>
+				<select name="" id="" title="카테고리 선택">
+					<option value="카테고리 선택">카테고리 선택</option>
+					<option value="카테고리 선택2">카테고리 선택</option>
+					<option value="카테고리 선택3">카테고리 선택</option>
+					<option value="카테고리 선택4">카테고리 선택</option>
+				</select>
+				<button type="button" class="bbs_btn type01 small">타겟 추가</button>
+				<br>
+				<select name="" id="" title="카테고리 선택">
+					<option value="카테고리 선택">카테고리 선택</option>
+					<option value="카테고리 선택2">카테고리 선택</option>
+					<option value="카테고리 선택3">카테고리 선택</option>
+					<option value="카테고리 선택4">카테고리 선택</option>
+				</select>
+				<select name="" id="" title="카테고리 선택">
+					<option value="카테고리 선택">카테고리 선택</option>
+					<option value="카테고리 선택2">카테고리 선택</option>
+					<option value="카테고리 선택3">카테고리 선택</option>
+					<option value="카테고리 선택4">카테고리 선택</option>
+				</select>
+				<button type="button" class="bbs_btn type04 small">삭제</button>
+				<br>
+				<select name="" id="" title="카테고리 선택">
+					<option value="카테고리 선택">카테고리 선택</option>
+					<option value="카테고리 선택2">카테고리 선택</option>
+					<option value="카테고리 선택3">카테고리 선택</option>
+					<option value="카테고리 선택4">카테고리 선택</option>
+				</select>
+				<select name="" id="" title="카테고리 선택">
+					<option value="카테고리 선택">카테고리 선택</option>
+					<option value="카테고리 선택2">카테고리 선택</option>
+					<option value="카테고리 선택3">카테고리 선택</option>
+					<option value="카테고리 선택4">카테고리 선택</option>
+				</select>
+				<button type="button" class="bbs_btn type04 small">삭제</button>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="">시작시간</label><span class="exactly y"></span></th>
+			<td>
+				<span class="calendar_box">
+					<input type="text" id="bbs_search_day_s" title="검색 시작일 선택" readonly>
+					<button type="button">달력에서 선택</button>
+				</span>
+				<select id="" title="시작시간 선택" style="width:80px;">
+					<option value="00시">00시</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="">종료시간</label><span class="exactly y"></span></th>
+			<td>
+				<span class="calendar_box">
+					<input type="text" id="bbs_search_day_e" title="검색 종료일 선택" readonly>
+					<button type="button">달력에서 선택</button>
+				</span>
+				<select name="" id="" title="종료시간 선택" style="width:80px;">
+					<option value="00시">00시</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="">시작/종료시간</label><span class="exactly y"></span></th>
+			<td>
+				<span class="calendar_box">
+					<input type="text" id="bbs_search_day_s" title="검색 시작일 선택" readonly>
+					<button type="button">달력에서 선택</button>
+				</span>
+				~
+				<span class="calendar_box">
+					<input type="text" id="bbs_search_day_e" title="검색 종료일 선택" readonly>
+					<button type="button">달력에서 선택</button>
+				</span>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="">연락처1</label><span class="exactly y"></span></th>
+			<td>
+				<input type="text" name="" id="">
+				<p class="explain">설명글 필요할 경우 사용</p>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">연락처2<span class="exactly y"></span></th>
+			<td>
+				<div class="phone">
+					<label for="" class="skip">휴대폰번호 국번 선택</label>
+					<select name="" id="" title="휴대폰번호 국번 선택">
+						<option value="010">010</option>
+					</select>
+					~
+					<label for="" class="skip">휴대폰번호 두번째 4자리 입력</label>
+					<input type="text" name="" id="" title="휴대폰번호 두번째 4자리 입력">
+					~
+					<label for="" class="skip">휴대폰번호 세번째 4자리 입력</label>
+					<input type="text" name="" id="" title="휴대폰번호 세번째 4자리 입력">
+				</div>
+				<p class="explain">설명글 필요할 경우 사용</p>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="">내용</label><span class="exactly y"></span></th>
+			<td>
+				<textarea name="" id="" class="bbs_content"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="">우편번호</label><span class="exactly y"></span></th>
+			<td>
+				<input type="text" value="" title="우편번호 입력" class="zipcode" readonly="readonly" placeholder="우편번호"> <button type="button" class="bbs_btn small type01">우편번호 찾기</button>
+				<div class="clearfix">
+					<span class="addr_left"><input type="text" name="" value="" title="기본주소 입력" placeholder="기본주소 입력" readonly="readonly" class="addr"></span>
+					<span class="addr_right"><input type="text" name="" value="" title="상세주소 입력" placeholder="상세주소 입력" class="addr2"></span>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">첨부파일<span class="exactly y"></span></th>
+			<td>
+				<ul class="attach">
+				<li>
+					<div class="attach_file">
+						<label for="" class="skip">첨부파일1</label>
+						<span class="file_input"><input type="file" name="" id="" class="file"></span>
+					</div>
+					<div class="attach_alt">
+						<label for="" class="skip" title="대체텍스트">대체텍스트</label>
+						<span class="alt_input"><input type="text" value="" id="" placeholder="첨부 이미지 대체콘텐츠 입력" ></span>
+						<button type="button" class="bbs_btn small type01">UPLOAD</button>
+					</div>
+				</li>
+				<li>
+					<div class="attach_file">
+						<label for="" class="skip">첨부파일2</label>
+						<span class="file_input"><input type="file" name="" id="" class="file"></span>
+					</div>
+					<div class="attach_alt">
+						<label for="" class="skip" title="대체텍스트">대체텍스트</label>
+						<span class="alt_input"><input type="text" value="" id="" placeholder="첨부 이미지 대체콘텐츠 입력" ></span>
+						<button type="button" class="bbs_btn small type01">UPLOAD</button>
+					</div>
+				</li>
+				</ul>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+	<!-- //bbs_table write -->
+	
+	<div class="bbs_btn_wrap clearfix">
+		<div class="bbs_left">
+			
+		</div>
+		<div class="bbs_right">
+			<a href="" class="bbs_btn list">목록</a>
+			<a href="" class="bbs_btn delete">삭제</a>
+			<!-- <a href="" class="bbs_btn cancel">취소</a> -->
+			<input type="submit" value="등록" class="bbs_btn write">
+		</div>
+	</div>
+	<!-- //bbs_btn_wrap -->
+
+
+
+	<div class="bbs_answer">
+		<ul>
+		<li>
+			<div class="title_area">
+				<span>등록자 : 관리자</span>
+				<span>등록일 : 2022. 03. 08 00:00</span>
+			</div>
+			<div class="contents_area">
+				<div class="title_box"><label for="">답변</label></div>
+				<div class="cont_box">
+					<textarea name="" id="" class="bbs_content"></textarea>
+				</div>
+			</div>
+			<div class="button_area">
+				<button type="button" class="bbs_btn modify">수정</button>
+			</div>
+		</li>
+		<li>
+			<div class="title_area">
+				<span>등록자 : 관리자</span>
+				<span>등록일 : 2022. 03. 08 00:00</span>
+			</div>
+			<div class="contents_area">
+				<div class="title_box"><label for="">답변</label></div>
+				<div class="cont_box">
+					<textarea name="" id="" class="bbs_content"></textarea>
+				</div>
+			</div>
+			<div class="button_area">
+				<button type="button" class="bbs_btn modify">수정</button>
+			</div>
+		</li>
+		<li>
+			<div class="contents_area">
+				<div class="title_box"><label for="">답변</label></div>
+				<div class="cont_box">
+					<textarea name="" id="" class="bbs_content"></textarea>
+				</div>
+			</div>
+			<div class="button_area">
+				<button type="button" class="bbs_btn reply_write">댓글 달기</button>
+			</div>
+		</li>
+		</ul>
+	</div>
+	<!-- //bbs_answer -->
+
+</fieldset>
+</form>
+                
+
+
+
+
+
+<div class="bbs_btn_wrap clearfix" style="margin:50px 0">
+	<p style="margin-bottom:20px;font-size:16px;"><strong>버튼 클래스 확인</strong> - 기본 클래스 bbs_btn 에 클래스 추가하여 사용. a, input, button 태그에 모두 사용 가능. (작은 버튼일 경우 클래스 small 추가)</p>
+	<div class="bbs_center">
+		<a href="" class="bbs_btn">bbs_btn</a>
+		<a href="" class="bbs_btn write">write</a>
+		<a href="" class="bbs_btn modify">modify</a>
+		<a href="" class="bbs_btn save">save</a>
+		<a href="" class="bbs_btn reply_write">reply_write</a>
+		<a href="" class="bbs_btn list">list</a>
+		<a href="" class="bbs_btn reset">reset</a>
+		<a href="" class="bbs_btn cancel">cancel</a>
+		<a href="" class="bbs_btn delete">delete</a>
+		<a href="" class="bbs_btn download">download</a>
+		<a href="" class="bbs_btn excel">excel</a>
+		<a href="" class="bbs_btn upload">upload</a>
+		<br><br>
+		<a href="" class="bbs_btn">bbs_btn</a>
+		<a href="" class="bbs_btn type01">type01</a>
+		<a href="" class="bbs_btn type02">type02</a>
+		<a href="" class="bbs_btn type03">type03</a>
+		<a href="" class="bbs_btn type04">type04</a>
+		<a href="" class="bbs_btn type05">type05</a>
+		<a href="" class="bbs_btn type06">type06</a>
+		<a href="" class="bbs_btn red">red</a>
+		<a href="" class="bbs_btn orange">orange</a>
+		<a href="" class="bbs_btn yellow">yellow</a>
+		<a href="" class="bbs_btn green">green</a>
+		<a href="" class="bbs_btn blue">blue</a>
+		<a href="" class="bbs_btn purple">purple</a>
+		<a href="" class="bbs_btn gray">gray</a>
+	</div>
+</div>
+<!-- //bbs_btn_wrap -->
+
+
+
+
+                </div>
+                <!-- //contents -->
+            </article>
+        </main>
+        <!-- //main.colgroup -->
+    </div>
+    <!-- //wrap -->
+</div>
+<!-- //container -->
+
+<hr>
+
+<footer id="footer">
+	<div class="wrap">
+		<h2 class="skip">사이트 정보</h2>
+		<p>Copyright 2022 ⓒ LINA Korea, a Cigna Company. All rights reserved. For more information, Contact webmaster@lina.co.kr</p>
+	</div>
+</footer>
+<!-- //footer -->
+</body>
+</html>

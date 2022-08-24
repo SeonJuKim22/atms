@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력" >
+    <meta name="description" content="사이트 상세설명">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/import.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/style.js"></script>
+    <title>[운영관리 메뉴명] - NH투자증권 ATMS</title>
+</head>
+
+<body id="sub">
+<div class="accessibility">
+    <a href="#contents">본문 바로가기</a>
+</div>
+
+<hr>
+
+<header id="header">
+    <div class="wrap">
+        <h1 class="logo"><span>라이나생명</span></h1>
+        <div class="gnb_box">
+			<h2 class="skip">사용자 로그인</h2>
+            <ul class="clearfix">
+			<li><a href="">개인정보</a></li>
+			<li><a href="">로그아웃</a></li>
+			</ul>
+        </div>
+		<!-- //gnb -->
+
+		<nav id="lnb_box">
+			<h2 class="skip">주메뉴</h2>
+			<div id="lnb">
+				<ul class="clearfix"><!-- 현재 선택된 메뉴에 클래스 on 추가 -->
+					<li class="depth1"><a href="">관리자관리</a></li>
+					<li class="depth1"><a href="" class="on">회원관리</a></li>
+					<li class="depth1"><a href="">사이버창구</a></li>
+					<li class="depth1"><a href="">보험상품관리</a></li>
+					<li class="depth1"><a href="">홈페이지관리</a></li>
+					<li class="depth1"><a href="">통계관리</a></li>
+					<li class="depth1"><a href="">모바일관리</a></li>
+					<li class="depth1"><a href="">상품몰관리(mall)</a></li>
+					<li class="depth1"><a href="">Chatbot</a></li>
+					<li class="depth1"><a href="">보장분석관리</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- //lnb -->
+    </div>
+</header>
+<!-- //header -->
+
+<hr>
+
+<div id="container">
+    <div class="wrap">
+        <div id="side">
+			<div class="side_title"><span>상품몰관리(mall)</span></div>
+            <nav class="side_menu">
+                <h2 class="skip">서브메뉴</h2>
+                <ul class="dep1">
+                <li><a href="">사고보험금재처리</a></li>
+                <li><a href="">고객정보변경</a></li>
+                <li><a href="">납입정보변경</a></li>
+                <li><a href="">사고보험금 상담신청_담당자 지정</a></li>
+                </ul>
+            </nav>
+            <!-- //side_menu -->
+        </div>
+        <!-- //side -->
+
+        <main class="colgroup" id="colgroup">
+            <article>
+                <header class="sub_head">
+                    <div class="sub_title"><h2>납입정보 변경</h2></div><!-- 현재 페이지 메뉴 -->
+					<div class="path">
+						<span class="home">HOME</span>
+						<span>사이버창구</span>
+						<strong>납입정보 변경신청</strong>
+					</div>
+                </header>
+
+                <div id="contents">
+
+
+<div class="bbs_search">
+	<form>
+		<fieldset>
+			<legend>검색</legend>
+			<table>
+				<caption>검색</caption>
+				<colgroup>
+					<col style="width:200px;">
+					<col>
+				</colgroup>
+				<tbody>
+				<tr>
+					<th scope="row">인풋</th>
+					<td>
+						<label for="" class="skip">검색어 입력</label>
+						<input type="text" id="" placeholder="검색어를 입력하세요.">
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">셀렉트</th>
+					<td>
+						<label for="" class="skip">분류 선택</label>
+						<select id="">
+							<option value="">전체</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">등록일자</th>
+					<td>
+						<span class="calendar_box">
+							<input type="text" id="bbs_search_day_s" title="검색 시작일 선택" readonly>
+							<button type="button">달력에서 선택</button>
+						</span>
+						~
+						<span class="calendar_box">
+							<input type="text" id="bbs_search_day_f" title="검색 마지막일 선택" readonly>
+							<button type="button">달력에서 선택</button>
+						</span>
+						<button type="button" class="bbs_btn term on">오늘</button><!-- 활성화될 경우 클래스 on 추가 -->
+						<button type="button" class="bbs_btn term">1개월</button>
+						<button type="button" class="bbs_btn term">3개월</button>
+						<button type="button" class="bbs_btn term">6개월</button>
+						<button type="button" class="bbs_btn term">12개월</button>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">라디오박스<span class="exactly y"></span></th>
+					<td>
+						<span class="checkbox">
+							<input type="radio" name="100" id="101">
+							<label for="101">아이템</label>
+						</span>
+						<span class="checkbox">
+							<input type="radio" name="100" id="102">
+							<label for="102">아이템</label>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">라디오박스 + 버튼<span class="exactly y"></span></th>
+					<td>
+						<span class="checkbox">
+							<input type="radio" name="110" id="111">
+							<label for="111"><span class="bbs_btn small">아이템</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="radio" name="110" id="112">
+							<label for="112"><span class="bbs_btn gray small">아이템</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="radio" name="110" id="113">
+							<label for="113"><span class="bbs_btn blue small">아이템</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="radio" name="110" id="114">
+							<label for="114"><span class="bbs_btn green small">아이템</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="radio" name="110" id="115">
+							<label for="115"><span class="bbs_btn yellow small">아이템</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="radio" name="110" id="116">
+							<label for="116"><span class="bbs_btn orange small">아이템</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="radio" name="110" id="117">
+							<label for="117"><span class="bbs_btn red small">아이템</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="radio" name="110" id="118">
+							<label for="118"><span class="bbs_btn purple small">아이템</span></label>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">체크박스<span class="exactly y"></span></th>
+					<td>
+						<span class="checkbox">
+							<input type="checkbox" name="120" id="121">
+							<label for="121">아이템</label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="" id="122">
+							<label for="122">아이템</label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="" id="123">
+							<label for="123">아이템</label>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">체크박스 + 버튼<span class="exactly y"></span></th>
+					<td>
+						<span class="checkbox">
+							<input type="checkbox" name="130" id="131">
+							<label for="131"><span class="bbs_btn small">아이템</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="130" id="132">
+							<label for="132"><span class="bbs_btn gray small">아이템</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="130" id="133">
+							<label for="133"><span class="bbs_btn blue small">아이템</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="130" id="134">
+							<label for="134"><span class="bbs_btn green small">아이템</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="130" id="135">
+							<label for="135"><span class="bbs_btn yellow small">아이템</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="130" id="136">
+							<label for="136"><span class="bbs_btn orange small">아이템</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="130" id="137">
+							<label for="137"><span class="bbs_btn red small">아이템</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="130" id="138">
+							<label for="138"><span class="bbs_btn purple small">아이템</span></label>
+						</span>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+			<div class="submit_box">
+				<button type="button" class="bbs_btn upload">업로드</button>
+				<button type="button" class="bbs_btn download">다운로드</button>
+				<button type="button" class="bbs_btn excel">excel</button>
+				<button type="submit" class="submit">검색</button>
+			</div>
+		</fieldset>
+	</form>
+</div>
+<!-- //bbs_search -->
+
+
+<div style="height:4px;margin:40px 0;background-color:red;"></div>
+
+
+<div class="bbs_search">
+	<form>
+		<fieldset>
+			<legend>검색</legend>
+			<table>
+				<caption>검색</caption>
+				<colgroup>
+					<col style="width:200px;">
+					<col>
+				</colgroup>
+				<tbody>
+
+				<tr><!-- 월별 -->
+					<th scope="row">
+						<div class="tab_search">
+							<a href="" class="on">월별통계</a>
+							<a href="">일별통계</a>
+							<a href="">요일별통계</a>
+						</div>
+					</th>
+					<td>
+						<button type="button" class="bbs_btn term on" title="2012년 보기">2012</button>
+						<button type="button" class="bbs_btn term" title="2013년 보기">2013</button>
+						<button type="button" class="bbs_btn term" title="2014년 보기">2014</button>
+						<button type="button" class="bbs_btn term" title="2015년 보기">2015</button>
+						<button type="button" class="bbs_btn term" title="2016년 보기">2016</button>
+						<button type="button" class="bbs_btn term" title="2017년 보기">2017</button>
+						<button type="button" class="bbs_btn term" title="2018년 보기">2018</button>
+						<button type="button" class="bbs_btn term" title="2019년 보기">2019</button>
+						<button type="button" class="bbs_btn term" title="2020년 보기">2020</button>
+						<button type="button" class="bbs_btn term" title="2021년 보기">2021</button>
+						<button type="button" class="bbs_btn term" title="2022년 보기">2022</button>
+					</td>
+				</tr>
+
+
+
+				<tr><!-- 일별 -->
+					<th scope="row">
+						<div class="tab_search">
+							<a href="">월별통계</a>
+							<a href="" class="on">일별통계</a>
+							<a href="">요일별통계</a>
+						</div>
+					</th>
+					<td>
+						<button type="button" class="bbs_btn term on" title="1월 보기">1</button>
+						<button type="button" class="bbs_btn term" title="2월 보기">2</button>
+						<button type="button" class="bbs_btn term" title="3월 보기">3</button>
+						<button type="button" class="bbs_btn term" title="4월 보기">4</button>
+						<button type="button" class="bbs_btn term" title="5월 보기">5</button>
+						<button type="button" class="bbs_btn term" title="6월 보기">6</button>
+						<button type="button" class="bbs_btn term" title="7월 보기">7</button>
+						<button type="button" class="bbs_btn term" title="8월 보기">8</button>
+						<button type="button" class="bbs_btn term" title="9월 보기">9</button>
+						<button type="button" class="bbs_btn term" title="10월 보기">10</button>
+						<button type="button" class="bbs_btn term" title="11월 보기">11</button>
+						<button type="button" class="bbs_btn term" title="12월 보기">12</button>
+					</td>
+				</tr>
+
+
+
+				<tr><!-- 요일별 -->
+					<th scope="row">
+						<div class="tab_search">
+							<a href="">월별통계</a>
+							<a href="">일별통계</a>
+							<a href="" class="on">요일별통계</a>
+						</div>
+					</th>
+					<td>
+						<label for="" class="skip">년도 선택</label>
+						<select id="" style="width:60px;">
+							<option value="">2022</option>
+						</select>
+						<span>년</span>
+						<label for="" class="skip">월 선택</label>
+						<select id="" style="width:50px;">
+							<option value="">12</option>
+						</select>
+						<span>월</span>
+						<button type="submit" class="bbs_btn type02 small">검색</button>
+					</td>
+				</tr>
+
+				</tbody>
+			</table>
+		</fieldset>
+	</form>
+</div>
+<!-- //bbs_search -->
+
+
+<div style="height:4px;margin:40px 0;background-color:red;"></div>
+
+
+<div class="bbs_search">
+	<form>
+		<fieldset>
+			<legend>검색</legend>
+			<table>
+				<caption>검색</caption>
+				<colgroup>
+					<col style="width:200px;">
+					<col>
+					<col style="width:200px;">
+					<col>
+				</colgroup>
+				<tbody>
+				<tr>
+					<th scope="row">상품명</th>
+					<td>
+						<label for="" class="skip">상품명 입력</label>
+						<input type="text" id="">
+					</td>
+					<th scope="row">상품코드</th>
+					<td>
+						<label for="" class="skip">상품코드 입력</label>
+						<input type="text" id="">
+					</td>
+				</tr>
+				</tbody>
+			</table>
+			<div class="submit_box">
+				<button type="submit" class="submit">검색</button>
+			</div>
+		</fieldset>
+	</form>
+</div>
+<!-- //bbs_search -->
+
+
+<div style="height:4px;margin:40px 0;background-color:red;"></div>
+
+
+<div class="bbs_search">
+	<form>
+		<fieldset>
+			<legend>검색</legend>
+			<table>
+				<caption>검색</caption>
+				<colgroup>
+					<col style="width:200px;">
+					<col>
+					<col style="width:200px;">
+					<col>
+					<col style="width:200px;">
+					<col>
+				</colgroup>
+				<tbody>
+				<tr>
+					<th scope="row">청구상태</th>
+					<td>
+						<label for="" class="skip">청구상태</label>
+						<select id="">
+							<option value="">전체</option>
+						</select>
+					</td>
+					<th scope="row">등록일</th>
+					<td>
+						<span class="calendar_box">
+							<input type="text" id="bbs_search_day_s" title="검색 시작일 선택" readonly>
+							<button type="button">달력에서 선택</button>
+						</span>
+						~
+						<span class="calendar_box">
+							<input type="text" id="bbs_search_day_f" title="검색 마지막일 선택" readonly>
+							<button type="button">달력에서 선택</button>
+						</span>
+						<button type="button" class="bbs_btn term">오늘</button><!-- 활성화될 경우 클래스 on 추가 -->
+					</td>
+					<th scope="row">채널</th>
+					<td>
+						<label for="" class="skip">채널 선택</label>
+						<select id="">
+							<option value="">전체</option>
+						</select>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+			<div class="submit_box">
+				<button type="submit" class="submit">검색</button>
+			</div>
+		</fieldset>
+	</form>
+</div>
+<!-- //bbs_search -->
+
+
+<div style="height:4px;margin:40px 0;background-color:red;"></div>
+
+
+<div class="bbs_search">
+	<form>
+		<fieldset>
+			<legend>검색</legend>
+			<table>
+				<caption>검색</caption>
+				<colgroup>
+					<col style="width:200px;">
+					<col>
+				</colgroup>
+				<tbody>
+				<tr>
+					<th scope="row">고객검색</th>
+					<td>
+						<span class="checkbox">
+							<input type="radio" name="200" id="201" checked>
+							<label for="201">증권번호</label>
+						</span>
+						<span class="checkbox">
+							<input type="radio" name="200" id="202">
+							<label for="202">주민번호</label>
+						</span>
+						<label for="" class="skip">번호 입력</label>
+						<input type="text" id="">
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">접수기간</th>
+					<td>
+						<span class="calendar_box">
+							<input type="text" id="bbs_search_day_s" title="검색 시작일 선택" readonly>
+							<button type="button">달력에서 선택</button>
+						</span>
+						~
+						<span class="calendar_box">
+							<input type="text" id="bbs_search_day_f" title="검색 마지막일 선택" readonly>
+							<button type="button">달력에서 선택</button>
+						</span>
+						<button type="button" class="bbs_btn term">오늘</button><!-- 활성화될 경우 클래스 on 추가 -->
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">처리상태</th>
+					<td>
+						<label for="" class="skip">처리상태 선택</label>
+						<select id="">
+							<option value="">전체</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">채널</th>
+					<td>
+						<span class="checkbox">
+							<input type="checkbox" name="210" id="211" checked>
+							<label for="211"><span class="bbs_btn small">ALL</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="210" id="212">
+							<label for="212"><span class="bbs_btn gray small">WEB</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="210" id="213">
+							<label for="213"><span class="bbs_btn blue small">APP</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="210" id="214">
+							<label for="214"><span class="bbs_btn green small">MOB</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="210" id="215" disabled>
+							<label for="215"><span class="bbs_btn yellow small">KAO</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="210" id="216" disabled>
+							<label for="216"><span class="bbs_btn orange small">NAV</span></label>
+						</span>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+			<div class="submit_box">
+				<button type="button" class="bbs_btn excel">excel</button>
+				<button type="button" class="bbs_btn cancel">검색해제</button>
+				<button type="submit" class="submit">검색</button>
+			</div>
+		</fieldset>
+	</form>
+</div>
+<!-- //bbs_search -->
+
+
+<div style="height:4px;margin:40px 0;background-color:red;"></div>
+
+
+<div class="bbs_search">
+	<form>
+		<fieldset>
+			<legend>검색</legend>
+			<table>
+				<caption>검색</caption>
+				<colgroup>
+					<col style="width:200px;">
+					<col>
+				</colgroup>
+				<tbody>
+				<tr>
+					<th scope="row">기간</th>
+					<td>
+						<span class="calendar_box">
+							<input type="text" id="bbs_search_day_s" title="검색 시작일 선택" readonly>
+							<button type="button">달력에서 선택</button>
+						</span>
+						~
+						<span class="calendar_box">
+							<input type="text" id="bbs_search_day_f" title="검색 마지막일 선택" readonly>
+							<button type="button">달력에서 선택</button>
+						</span>
+						<button type="button" class="bbs_btn term">오늘</button><!-- 활성화될 경우 클래스 on 추가 -->
+						<button type="button" class="bbs_btn term">1개월</button>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">NPS점수</th>
+					<td>
+						<span class="checkbox">
+							<input type="checkbox" name="300" id="301" checked>
+							<label for="301"><span class="bbs_btn small">전체</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="300" id="302">
+							<label for="302"><span class="bbs_btn gray small">0점</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="300" id="303">
+							<label for="303"><span class="bbs_btn gray small">1점</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="300" id="304">
+							<label for="304"><span class="bbs_btn gray small">2점</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="300" id="305">
+							<label for="305"><span class="bbs_btn gray small">3점</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="300" id="306">
+							<label for="306"><span class="bbs_btn gray small">4점</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="300" id="307">
+							<label for="307"><span class="bbs_btn gray small">5점</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="300" id="308">
+							<label for="308"><span class="bbs_btn gray small">6점</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="300" id="309">
+							<label for="309"><span class="bbs_btn gray small">7점</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="300" id="310">
+							<label for="310"><span class="bbs_btn gray small">8점</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="300" id="311">
+							<label for="311"><span class="bbs_btn gray small">9점</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="300" id="312">
+							<label for="312"><span class="bbs_btn gray small">10점</span></label>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">채널</th>
+					<td>
+						<span class="checkbox">
+							<input type="checkbox" name="320" id="321" checked>
+							<label for="321"><span class="bbs_btn small">전체</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="320" id="322">
+							<label for="322"><span class="bbs_btn blue small">계약자정보변경</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="320" id="323">
+							<label for="323"><span class="bbs_btn blue small">보험료납입정보변경</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="320" id="324">
+							<label for="324"><span class="bbs_btn blue small">보험료납입</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="320" id="325">
+							<label for="325"><span class="bbs_btn blue small">하고보험금청구</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="320" id="326">
+							<label for="326"><span class="bbs_btn blue small">이자납입정보변경</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="320" id="327">
+							<label for="327"><span class="bbs_btn blue small">보험계약대출원금/이자상환</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="320" id="328">
+							<label for="328"><span class="bbs_btn blue small">마케팅활용동의정보변경</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="320" id="329">
+							<label for="329"><span class="bbs_btn blue small">펀드수익률변동</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="320" id="330">
+							<label for="330"><span class="bbs_btn blue small">가상계좌발급</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="320" id="331">
+							<label for="331"><span class="bbs_btn blue small">특별입금</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="320" id="332">
+							<label for="332"><span class="bbs_btn green small">잔자완판</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="320" id="333">
+							<label for="333"><span class="bbs_btn small">신청서작성법만족</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="320" id="334">
+							<label for="334"><span class="bbs_btn gray small">보험금청구 일림톡</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="320" id="335">
+							<label for="335"><span class="bbs_btn orange small">종합안내장만족</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" name="320" id="336">
+							<label for="336"><span class="bbs_btn orange small">종합안내장추천</span></label>
+						</span>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+			<div class="submit_box">
+				<button type="button" class="bbs_btn download">다운로드</button>
+				<button type="submit" class="submit">검색</button>
+			</div>
+		</fieldset>
+	</form>
+</div>
+<!-- //bbs_search -->
+
+
+<div style="height:4px;margin:40px 0;background-color:red;"></div>
+
+
+<div class="bbs_search">
+	<form>
+		<fieldset>
+			<legend>검색</legend>
+			<p class="bbs_unit"><strong class="current">1</strong>/<span class="total">151</span> PAGE, <strong class="current">46</strong>/<span class="total">4524</span> RECORDS</p>
+			<table>
+				<caption>검색</caption>
+				<colgroup>
+					<col style="width:200px;">
+					<col>
+					<col style="width:200px;">
+					<col>
+				</colgroup>
+				<tbody>
+				<tr>
+					<th scope="row">유입일시</th>
+					<td>
+						<span class="calendar_box">
+							<input type="text" id="bbs_search_day_s" title="검색 시작일 선택" readonly>
+							<button type="button">달력에서 선택</button>
+						</span>
+						~
+						<span class="calendar_box">
+							<input type="text" id="bbs_search_day_f" title="검색 마지막일 선택" readonly>
+							<button type="button">달력에서 선택</button>
+						</span>
+						<button type="button" class="bbs_btn term">오늘</button><!-- 활성화될 경우 클래스 on 추가 -->
+						<button type="button" class="bbs_btn term">1개월</button>
+					</td>
+					<th scope="row">성명</th>
+					<td>
+						<label for="" class="skip">성명 입력</label>
+						<input type="text" id="" placeholder="NAME">
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">생년월일</th>
+					<td>
+						<label for="" class="skip">생년월일 입력</label>
+						<input type="text" id="" placeholder="YYYYMMDD">
+					</td>
+					<th scope="row">휴대폰번호</th>
+					<td>
+						<label for="" class="skip">휴대폰번호 입력</label>
+						<input type="text" id="">
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">ADTYPE</th>
+					<td>
+						<span class="checkbox">
+							<input type="radio" name="400" id="401" checked>
+							<label for="401"><span class="bbs_btn small">전체</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="radio" name="400" id="402">
+							<label for="402"><span class="bbs_btn blue small">WEB_DA_ANS</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="radio" name="400" id="403">
+							<label for="403"><span class="bbs_btn yellow small">MOBILE_DA_ANS</span></label>
+						</span>
+					</td>
+					<th scope="row">EVENT</th>
+					<td>
+						<span class="checkbox">
+							<input type="radio" name="410" id="411" checked>
+							<label for="411"><span class="bbs_btn small">전체</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="radio" name="410" id="412">
+							<label for="412"><span class="bbs_btn gray small">치아</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="radio" name="410" id="413">
+							<label for="413"><span class="bbs_btn gray small">암</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="radio" name="410" id="414">
+							<label for="414"><span class="bbs_btn gray small">치매</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="radio" name="410" id="415">
+							<label for="415"><span class="bbs_btn gray small">2대 성인병</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="radio" name="410" id="416">
+							<label for="416"><span class="bbs_btn gray small">입원</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="radio" name="410" id="417">
+							<label for="417"><span class="bbs_btn gray small">수술</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="radio" name="410" id="418">
+							<label for="418"><span class="bbs_btn gray small">사망</span></label>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">SOURCE</th>
+					<td>
+						<span class="checkbox">
+							<input type="radio" name="420" id="421" checked>
+							<label for="421"><span class="bbs_btn small">전체</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="radio" name="420" id="422">
+							<label for="422"><span class="bbs_btn blue small">CONSULT_QUOTE</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="radio" name="420" id="423">
+							<label for="423"><span class="bbs_btn gray small">CONSULT_QUOTE_M</span></label>
+						</span>
+					</td>
+					<th scope="row">MEDIA</th>
+					<td>
+						<span class="checkbox">
+							<input type="radio" name="430" id="431" checked>
+							<label for="431"><span class="bbs_btn small">전체</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="radio" name="430" id="432">
+							<label for="432"><span class="bbs_btn blue small">GSPOINT</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="radio" name="430" id="433">
+							<label for="433"><span class="bbs_btn red small">LPOINT</span></label>
+						</span>
+						<span class="checkbox">
+							<input type="radio" name="430" id="434">
+							<label for="434"><span class="bbs_btn orange small">LINAJSK</span></label>
+						</span>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+			<div class="submit_box">
+				<button type="submit" class="submit">검색</button>
+			</div>
+		</fieldset>
+	</form>
+</div>
+<!-- //bbs_search -->
+
+
+
+
+                </div>
+                <!-- //contents -->
+            </article>
+        </main>
+        <!-- //main.colgroup -->
+    </div>
+    <!-- //wrap -->
+</div>
+<!-- //container -->
+
+<hr>
+
+<footer id="footer">
+	<div class="wrap">
+		<h2 class="skip">사이트 정보</h2>
+		<p>Copyright 2022 ⓒ LINA Korea, a Cigna Company. All rights reserved. For more information, Contact webmaster@lina.co.kr</p>
+	</div>
+</footer>
+<!-- //footer -->
+</body>
+</html>

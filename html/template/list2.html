@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력" >
+    <meta name="description" content="사이트 상세설명">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/import.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/style.js"></script>
+    <title>[운영관리 메뉴명] - NH투자증권 ATMS</title>
+</head>
+
+<body id="sub">
+<div class="accessibility">
+    <a href="#contents">본문 바로가기</a>
+</div>
+
+<hr>
+
+<header id="header">
+    <div class="wrap">
+        <h1 class="logo"><span>라이나생명</span></h1>
+        <div class="gnb_box">
+			<h2 class="skip">사용자 로그인</h2>
+            <ul class="clearfix">
+			<li><a href="">개인정보</a></li>
+			<li><a href="">로그아웃</a></li>
+			</ul>
+        </div>
+		<!-- //gnb -->
+
+		<nav id="lnb_box">
+			<h2 class="skip">주메뉴</h2>
+			<div id="lnb">
+				<ul class="clearfix"><!-- 현재 선택된 메뉴에 클래스 on 추가 -->
+					<li class="depth1"><a href="">관리자관리</a></li>
+					<li class="depth1"><a href="" class="on">회원관리</a></li>
+					<li class="depth1"><a href="">사이버창구</a></li>
+					<li class="depth1"><a href="">보험상품관리</a></li>
+					<li class="depth1"><a href="">홈페이지관리</a></li>
+					<li class="depth1"><a href="">통계관리</a></li>
+					<li class="depth1"><a href="">모바일관리</a></li>
+					<li class="depth1"><a href="">상품몰관리(mall)</a></li>
+					<li class="depth1"><a href="">Chatbot</a></li>
+					<li class="depth1"><a href="">보장분석관리</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- //lnb -->
+    </div>
+</header>
+<!-- //header -->
+
+<hr>
+
+<div id="container">
+    <div class="wrap">
+        <div id="side">
+			<div class="side_title"><span>상품몰관리(mall)</span></div>
+            <nav class="side_menu">
+                <h2 class="skip">서브메뉴</h2>
+                <ul class="dep1">
+                <li><a href="">사고보험금재처리</a></li>
+                <li><a href="">고객정보변경</a></li>
+                <li><a href="">납입정보변경</a></li>
+                <li><a href="">사고보험금 상담신청_담당자 지정</a></li>
+                </ul>
+            </nav>
+            <!-- //side_menu -->
+        </div>
+        <!-- //side -->
+
+        <main class="colgroup" id="colgroup">
+            <article>
+                <header class="sub_head">
+                    <div class="sub_title"><h2>납입정보 변경</h2></div><!-- 현재 페이지 메뉴 -->
+					<div class="path">
+						<span class="home">HOME</span>
+						<span>사이버창구</span>
+						<strong>납입정보 변경신청</strong>
+					</div>
+                </header>
+
+                <div id="contents">
+
+
+<div class="bbs_search">
+	<form>
+		<fieldset>
+			<legend>검색</legend>
+			<table>
+				<caption>검색</caption>
+				<colgroup>
+					<col style="width:200px;">
+					<col>
+				</colgroup>
+				<tbody>
+				<tr>
+					<th scope="row">검색어</th>
+					<td>
+						<label for="" class="skip">검색어 입력</label>
+						<input type="text" id="" placeholder="검색어를 입력하세요.">
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">대상</th>
+					<td>
+						<label for="" class="skip">분류 선택</label>
+						<select id="">
+							<option value="">전체</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">등록일자</th>
+					<td>
+						<span class="calendar_box">
+							<input type="text" id="bbs_search_day_s" title="검색 시작일 선택" readonly>
+							<button type="button">달력에서 선택</button>
+						</span>
+						~
+						<span class="calendar_box">
+							<input type="text" id="bbs_search_day_f" title="검색 마지막일 선택" readonly>
+							<button type="button">달력에서 선택</button>
+						</span>
+						<button type="button" class="bbs_btn term on">오늘</button><!-- 활성화될 경우 클래스 on 추가 -->
+						<button type="button" class="bbs_btn term">1개월</button>
+						<button type="button" class="bbs_btn term">3개월</button>
+						<button type="button" class="bbs_btn term">6개월</button>
+						<button type="button" class="bbs_btn term">12개월</button>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+			<div class="submit_box">
+				<button type="button" class="bbs_btn upload">업로드</button>
+				<button type="button" class="bbs_btn download">다운로드</button>
+				<button type="button" class="bbs_btn excel">excel</button>
+				<button type="submit" class="submit">검색</button>
+			</div>
+		</fieldset>
+	</form>
+</div>
+<!-- //bbs_search -->
+
+<p class="bbs_unit">총 <strong class="current">0</strong> [<strong class="current">1</strong>/<span class="total">10</span>page]</p>
+<table class="bbs_table list"><!-- 리스트 게시판 클래스 list 추가 -->
+	<caption>{게시판명} 목록 - 코드, 상품명, AD TYPE, MEDIA, 전화번호, 수정/삭제, 일괄선택 등의 정보 제공</caption>
+	<colgroup>
+		<col style="width:50px;">
+		<col style="width:150px;">
+		<col>
+		<col style="width:100px;">
+		<col style="width:100px;">
+		<col style="width:150px;">
+		<col style="width:150px;">
+	</colgroup>
+	<thead>
+	<tr>
+		<th scope="col">NO</th>
+		<th scope="col">썸네일</th>
+		<th scope="col">제목/요약</th>
+		<th scope="col">조회수</th>
+		<th scope="col">사용여부</th>
+		<th scope="col">생성일</th>
+		<th scope="col">생성자</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>10</td>
+		<td>
+			<span class="thumbnail"><img src="" alt="이미지설명 이미지"></span>
+		</td>
+		<td class="subject vertical_top">
+			<ul>
+			<li>
+				<strong>제목 : </strong>
+				<a href="">고객보호를 위한 전 임직원</a>
+			</li>
+			<li>
+				<strong>요약 : </strong>
+				<span>고객보호를 위한 전 임직원</span>
+			</li>
+		</td>
+		<td>9999</td>
+		<td>사용</td>
+		<td>2022-03-11</td>
+		<td>10000001</td>
+	</tr>
+	<tr>
+		<td>9</td>
+		<td>
+			<span class="thumbnail"><img src="" alt="이미지설명 이미지"></span>
+		</td>
+		<td class="subject vertical_top">
+			<ul>
+			<li>
+				<strong>제목 : </strong>
+				<a href="">고객보호를 위한 전 임직원</a>
+			</li>
+			<li>
+				<strong>요약 : </strong>
+				<span>고객보호를 위한 전 임직원</span>
+			</li>
+		</td>
+		<td>9999</td>
+		<td>사용</td>
+		<td>2022-03-11</td>
+		<td>10000001</td>
+	</tr>
+	<tr>
+		<td>8</td>
+		<td>
+			<span class="thumbnail"><img src="" alt="이미지설명 이미지"></span>
+		</td>
+		<td class="subject vertical_top">
+			<ul>
+			<li>
+				<strong>제목 : </strong>
+				<a href="">고객보호를 위한 전 임직원</a>
+			</li>
+			<li>
+				<strong>요약 : </strong>
+				<span>고객보호를 위한 전 임직원</span>
+			</li>
+		</td>
+		<td>9999</td>
+		<td>사용</td>
+		<td>2022-03-11</td>
+		<td>10000001</td>
+	</tr>
+	<tr>
+		<td>7</td>
+		<td>
+			<span class="thumbnail"><img src="" alt="이미지설명 이미지"></span>
+		</td>
+		<td class="subject vertical_top">
+			<ul>
+			<li>
+				<strong>제목 : </strong>
+				<a href="">고객보호를 위한 전 임직원</a>
+			</li>
+			<li>
+				<strong>요약 : </strong>
+				<span>고객보호를 위한 전 임직원</span>
+			</li>
+		</td>
+		<td>9999</td>
+		<td>사용</td>
+		<td>2022-03-11</td>
+		<td>10000001</td>
+	</tr>
+	<tr>
+		<td colspan="7" class="empty">등록된 내용이 없습니다.</td>
+	</tr>
+	</tbody>
+</table>
+<!-- //bbs_default list -->
+
+<div class="bbs_btn_wrap clearfix">
+	<div class="bbs_left">
+		
+	</div>
+	<div class="bbs_right">
+		<a href="" class="bbs_btn write">등록</a>
+	</div>
+</div>
+<!-- //bbs_btn_wrap -->
+
+<div class="pagination">
+	<a href="" class="prev_end">처음 페이지</a>
+	<a href="" class="prev_one">이전 10 페이지</a>
+	<strong title="현재 1페이지">1</strong>
+	<a href="" title="2페이지 이동">2</a>
+	<a href="" title="3페이지 이동">3</a>
+	<a href="" title="4페이지 이동">4</a>
+	<a href="" title="5페이지 이동">5</a>
+	<a href="" title="6페이지 이동">6</a>
+	<a href="" title="7페이지 이동">7</a>
+	<a href="" title="8페이지 이동">8</a>
+	<a href="" title="9페이지 이동">9</a>
+	<a href="" title="10페이지 이동">10</a>
+	<a href="" class="next_one">다음 10 페이지</a>
+	<a href="" class="next_end">마지막 페이지</a>
+</div>
+<!-- //pagination -->
+                
+
+
+
+
+
+
+
+
+                </div>
+                <!-- //contents -->
+            </article>
+        </main>
+        <!-- //main.colgroup -->
+    </div>
+    <!-- //wrap -->
+</div>
+<!-- //container -->
+
+<hr>
+
+<footer id="footer">
+	<div class="wrap">
+		<h2 class="skip">사이트 정보</h2>
+		<p>Copyright 2022 ⓒ LINA Korea, a Cigna Company. All rights reserved. For more information, Contact webmaster@lina.co.kr</p>
+	</div>
+</footer>
+<!-- //footer -->
+</body>
+</html>
