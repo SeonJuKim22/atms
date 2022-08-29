@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.5, minimum-scale=1.0, user-scalable=yes">
+    <meta name="title" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="assets/css/worklist.css">
+    <script src="assets/lib/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/worklist.js"></script>
+    <title>NH투자증권ATMS</title>
+</head>
+
+<body>
+    <span class="g_site_info hide">
+        <!-- 사이트 정보 -->
+        <span class="site_type">web</span><!-- web, mobile -->
+        <span class="site_derectory">html</span><!-- html 파일 폴더 경로 -->
+    </span>
+
+    <div id="g_wrapper">
+
+        <header id="g_header">
+            <h1 class="g_h1">NH투자증권ATMS</h1>
+            <button type="button" class="g_header_open">좌측 메뉴 열기</button>
+            <nav class="g_menu">
+
+            </nav>
+            <!--<div class="g_other_menu">
+                <ul>
+                    <li><a href="html/template/style_guide.html" target="_blank" title="새창">스타일가이드</a></li>
+                    <li><a href="html/template/form_guide.html" target="_blank" title="새창">form가이드</a></li>
+                    <li><a href="html/guide/button.html" target="_blank" title="새창">작업자용가이드</a></li>
+                </ul>
+            </div>-->
+            <button type="button" class="g_header_close">좌측 메뉴 닫기</button>
+        </header>
+
+        <div id="g_container">
+            <main>
+                <div class="g_link_menu">
+                    <ul>
+                        <li class="active"><a href="javascript:void(0);">NH투자증권ATMS</a></li>
+
+                    </ul>
+                </div>
+                <div id="g_contents">
+
+                    <section class="g_section">
+                        <div class="g_title">
+                            <h2 class="g_h2">메인&amp;가이드</h2>
+                        </div>
+                        <table class="g_table">
+                            <caption>워크리스트</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="row" colspan="3">메뉴</th>
+                                    <th scope="row" rowspan="2" style="width:6rem;">유형</th>
+                                    <th scope="row" rowspan="2" style="width:10rem;">디렉토리</th>
+                                    <th scope="row" rowspan="2" style="width:10rem;">파일명</th>
+                                    <th scope="row" colspan="2" style="width:14rem;">담당자</th>
+                                    <th scope="row" rowspan="2" style="width:7rem;">작업상태</th>
+                                    <th scope="row" rowspan="2" style="width:8rem;">완료일</th>
+                                    <th scope="row" rowspan="2">비고</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2Depth</th>
+                                    <th scope="row">3Depth</th>
+                                    <th scope="row">4Depth</th>
+                                    <th scope="row">기획</th>
+                                    <th scope="row">퍼블리셔</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-info="depth depth1">로그인</td>
+                                    <td data-info="depth depth2"></td>
+                                    <td data-info="depth depth3"></td>
+
+                                    <td data-info="type center">page</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_CW_0100</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+
+                                <tr>
+                                    <td data-info="depth depth1">서브 Layout</td>
+                                    <td data-info="depth depth2"></td>
+                                    <td data-info="depth depth3"></td>
+
+                                    <td data-info="type center">page</td><!-- page, popup, layer -->
+                                    <td data-info="directory center">template</td>
+                                    <td data-info="file_name center">layout</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center"></td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1">스타일 가이드</td>
+                                    <td data-info="depth depth2"></td>
+                                    <td data-info="depth depth3"></td>
+
+                                    <td data-info="type center">page</td><!-- page, popup, layer -->
+                                    <td data-info="directory center">template</td>
+                                    <td data-info="file_name center">style_guide</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center"></td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1">form 요소 가이드</td>
+                                    <td data-info="depth depth2"></td>
+                                    <td data-info="depth depth3"></td>
+
+                                    <td data-info="type center">page</td><!-- page, popup, layer -->
+                                    <td data-info="directory center">template</td>
+                                    <td data-info="file_name center">form_guide</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center"></td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1">윈도우 팝업</td>
+                                    <td data-info="depth depth2"></td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">window_popup</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1">레이어 팝업</td>
+                                    <td data-info="depth depth2"></td>
+                                    <td data-info="depth depth3"></td>
+
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">layer_popup</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <!-- //g_section -->
+
+                    <section class="g_section">
+                        <div class="g_title">
+                            <h2 class="g_h2"></h2>
+                        </div>
+                        <table class="g_table">
+                            <caption>워크리스트</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="row" colspan="3">메뉴</th>
+                                    <th scope="row" rowspan="2" style="width:6rem;">유형</th>
+                                    <th scope="row" rowspan="2" style="width:10rem;">단위 업무 구분</th>
+                                    <th scope="row" rowspan="2" style="width:15rem;">파일명</th>
+                                    <th scope="row" colspan="2" style="width:10rem;">담당자</th>
+                                    <th scope="row" rowspan="2" style="width:7rem;">작업상태</th>
+                                    <th scope="row" rowspan="2" style="width:8rem;">완료일</th>
+                                    <th scope="row" rowspan="2">비고</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15rem;">2Depth</th>
+                                    <th scope="row" style="width:15rem;">3Depth</th>
+                                    <th scope="row" style="width:15rem;">4Depth</th>
+                                    <th scope="row">기획</th>
+                                    <th scope="row" style="width:8rem;">퍼블리셔</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-info="depth depth1">운영관리 </td>
+                                    <td data-info="depth depth2">개국현황</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">page</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_OM_0100</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">장애현황</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">page</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_OM_0200</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">일일거래내역</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">page</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_OM_0300</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">일일장애내역</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">page</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_OM_0400</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1">기기관리</td>
+                                    <td data-info="depth depth2">기기등록/변경</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">page</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_AM_0100</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">신규설치등록</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_AM_0101</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">기기내역변경</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_AM_0102</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">설치운영이력</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_AM_0103</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">기기현황</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">page</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_AM_0200</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">정보조회</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_RM_0201</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">기기제어</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_RM_0202</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업전</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">메시지전송</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_RM_0203</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업전</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">거래설정</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_RM_0204</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업전</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">원격관리이력</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">page</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_RM_0300</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">파일관리</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">page</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_RM_0400</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">파일수집</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_RM_0401</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업전</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">파일등록</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_RM_0402</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업전</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+
+                                <tr>
+                                    <td data-info="depth depth1">정보관리</td>
+                                    <td data-info="depth depth2">팀점정보</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">page</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_IM_0100</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">기종관리</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">page</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_IM_0200</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">기종등록</td>
+                                    <td data-info="depth depth3"></td>
+
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_IM_0201</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">기종수정</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_IM_0202</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">기종삭제</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_IM_0203</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">공통코드관리</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">page</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_IM_0300</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">장애코드관리</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">page</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_IM_0400</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">상세정보</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_IM_0401</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">장애코드등록</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_IM_0402</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">장애코드수정</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_IM_0403</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">장애코드수정</td>
+                                    <td data-info="depth depth3"> </td>
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_IM_0403</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">장애코드삭제</td>
+                                    <td data-info="depth depth3"></td>
+
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_IM_0404</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">메뉴관리</td>
+                                    <td data-info="depth depth3"></td>
+
+                                    <td data-info="type center">page</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_IM_0500</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">사용자관리</td>
+                                    <td data-info="depth depth3"></td>
+
+                                    <td data-info="type center">page</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_IM_0600</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">사용자등록</td>
+                                    <td data-info="depth depth3"></td>
+
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_IM_0601</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2"> 사용자수정</td>
+                                    <td data-info="depth depth3"></td>
+
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_IM_0602</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">사용자삭제</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_IM_0603</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">사용자비밀번호변경</td>
+                                    <td data-info="depth depth3"></td>
+
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_IM_0604</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>.
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">사용자LOCK해제</td>
+                                    <td data-info="depth depth3"></td>
+
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_IM_0605</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">자료실관리</td>
+                                    <td data-info="depth depth3"></td>
+
+                                    <td data-info="type center">page</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_IM_0700</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">자료실등록</td>
+                                    <td data-info="depth depth3"></td>
+
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_IM_0701</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">자료실수정</td>
+                                    <td data-info="depth depth3"></td>
+
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_IM_0702</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업전</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">권한관리</td>
+                                    <td data-info="depth depth3"></td>
+
+                                    <td data-info="type center">page</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_IM_0800</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">권한별메뉴관리</td>
+                                    <td data-info="depth depth3"></td>
+
+                                    <td data-info="type center">page</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_IM_0801</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1">저널관리</td>
+                                    <td data-info="depth depth2">전자저널정보</td>
+                                    <td data-info="depth depth3"></td>
+
+                                    <td data-info="type center">page</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_JM_0100</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">롤방식조회</td>
+                                    <td data-info="depth depth3"></td>
+
+                                    <td data-info="type center">page</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_JM_0100</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">이미지보기</td>
+                                    <td data-info="depth depth3"></td>
+
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_JM_0102</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업전</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">화면조회이력</td>
+                                    <td data-info="depth depth3"></td>
+
+                                    <td data-info="type center">page</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_JM_0200</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1">공통업무</td>
+                                    <td data-info="depth depth2">로그인</td>
+                                    <td data-info="depth depth3"></td>
+
+                                    <td data-info="type center">page</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_CW_0100</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">대시보드</td>
+                                    <td data-info="depth depth3"></td>
+
+                                    <td data-info="type center">page</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_CW_0200</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업전</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                                <tr>
+                                    <td data-info="depth depth1"></td>
+                                    <td data-info="depth depth2">팀점찾기</td>
+                                    <td data-info="depth depth3"></td>
+                                    <td data-info="type center">popup</td><!-- page, popup, layer -->
+                                    <td data-info="directory center"></td>
+                                    <td data-info="file_name center">UID_AM_CW_0300</td>
+                                    <td data-info="name planner center"></td>
+                                    <td data-info="name publisher center"></td>
+                                    <td data-info="state center">작업중</td><!-- 작업전, 작업중, 검수요청, 검수완료, 완료 -->
+                                    <td data-info="date center"></td><!-- yyyy-mm-dd -->
+                                    <td data-info="note"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <!-- //g_section -->
+                </div>
+                <!-- //g_contents -->
+            </main>
+        </div>
+
+        <footer id="g_footer">
+
+        </footer>
+    </div>
+</body>
+
+</html>

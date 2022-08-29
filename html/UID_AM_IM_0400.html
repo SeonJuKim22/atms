@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력" >
+    <meta name="description" content="사이트 상세설명">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/import.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/style.js"></script>
+    <title>[정보관리 - 장애코드관리] - NH투자증권 ATMS</title>
+</head>
+
+<body id="sub" class="sub04"><!-- 1차메뉴 분류코드 sub01(운영관리), sub02(기기관리), sub03 sub04 sub05 ... 등으로  clsss 추가 -->
+<div class="accessibility">
+    <a href="#contents">본문 바로가기</a>
+    <a href="#lnb">주메뉴 바로가기</a>
+</div>
+
+<hr>
+
+<header id="header">
+    <div class="wrap clearfix">
+        <h1 class="logo"><a href=""><img src="images/common/logo.png" alt="NH투자증권 ATMS  LOGO"></a></h1>
+        <div class="gnb_box">
+            <h2 class="skip">gnb</h2>
+            <ul class="clearfix">
+                <li>
+                    <div class="search_box">
+                        <form method="post" action="">
+                        <fieldset>
+                            <legend>상단검색</legend>
+                            <input type="text" id="" name="" placeholder="메뉴검색" title="메뉴검색">
+                            <button type="button" class="search_btn">검색</button>
+                        </fieldset>
+                        </form>
+                    </div>
+                </li>
+                <li><span class="user_name"><em>김농협</em> 님 접속중</span></li>
+                <li><button type="button">로그아웃</button></li>
+            </ul>
+        </div>
+        <!--//gnb_box-->
+
+        <nav id="lnb_box">
+			<h2 class="skip">주메뉴</h2>
+			<div id="lnb">
+				<ul class="clearfix">
+					<li class="depth1"><a href="">운영관리</a></li>
+					<li class="depth1"><a href="">기기관리</a></li>
+					<li class="depth1"><a href="">원격관리</a></li>
+					<li class="depth1"><a href=""   class="on">정보관리</a></li><!-- 현재 선택된 메뉴에 클래스 on 추가 -->
+					<li class="depth1"><a href="">저널관리</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- //lnb -->
+    </div>
+</header>
+<!-- //header -->
+
+<hr>
+
+<div id="container">
+    <div class="wrap">
+        <div id="side">
+            <div class="side_wrap">
+                <div class="side_title"><span>정보관리</span></div><!-- 1차 메뉴명이 들어갑니다.-->
+                <nav class="side_menu">
+                    <h2 class="skip">서브메뉴</h2>
+                    <ul class="dep1">
+                    <li><a href=""><span>팀점정보</span></a></li>
+                    <li><a href=""><span>기종관리</span></a></li>
+                    <li><a href=""><span>공통코드관리</span></a></li>
+                    <li><a href=""  class="on"><span>장애코드관리</span></a></li><!-- 활성화시 on 처리-->
+                    <li><a href=""><span>메뉴관리</span></a></li>
+                    <li><a href=""><span>사용자관리</span></a></li>
+                    <li><a href=""><span>자료실관리</span></a></li>
+                    <li><a href=""><span>권한관리</span></a></li>
+                    </ul>
+                </nav>
+                <!-- //side_menu -->
+                <div class="side_cont">
+                    <p>전화문의
+                      <span>02-1234-5678</span>
+                    </p>
+			  </div>
+			  <!--//side_cont-->
+            </div>
+			<!--//side_wrap -->
+        </div>
+		 <!-- //side -->
+ 
+		<main class="colgroup" id="colgroup">
+			<article>
+				<header class="sub_head">
+					<div class="sub_title"><h2>장애코드관리</h2></div><!-- 현재 페이지 메뉴명 -->
+				</header>
+				<!--// header -->
+
+				<div id="contents"><!-- 컨텐츠 시작-->
+					<!-- bbs_search-->
+					<div class="bbs_search">
+						<form>
+							<fieldset>
+								<div class="submit_box submit_top">
+									<button type="submit" class="submit">조회</button>
+								</div>
+								<legend>검색</legend>
+								<table>
+                                    <caption>검색 목록 - 업체, 장애종류구분, 장애코드, LC코드순으로 정보를 제공</caption>
+									<colgroup>
+										<col style="width:12%">
+										<col style="width:38%">
+										<col style="width:12%">
+										<col style="width:38%">
+									</colgroup>
+									<tbody>
+									  <tr>
+										  <th scope="row">업체</th>
+										  <td>
+                                            <label for="" class="skip">분류 선택</label>
+                                            <select id="" >
+                                                <option value="">선택</option>
+                                            </select>
+										  </td>
+                                          <th scope="row">장애종류구분</th>
+										  <td>
+                                            <label for="" class="skip">분류 선택</label>
+                                            <select id="" >
+                                                <option value="">선택</option>
+                                            </select>
+										  </td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">장애코드</th>
+										  <td>
+                                            <label for="" class="skip">검색어 입력</label>
+                                            <input type="text" id="" class="w100" placeholder="12345">
+										  </td>
+                                          <th scope="row">LC코드</th>
+										  <td>
+                                            <label for="" class="skip">검색어 입력</label>
+                                            <input type="text" id="" class="w100" placeholder="12">
+										  </td>
+                                        </tr>
+									</tbody>
+								</table>
+							</fieldset>
+						</form>
+					</div>
+					<!-- //bbs_search -->
+                    <!--  btn_box  -->
+					<div class="btn_box justify_end">
+                        <button type="button" class="bbs_btn navy">상세정보</button>
+						<button type="button" class="bbs_btn excel">엑셀저장</button>
+					</div>
+					<!-- //btn_box  -->
+					
+
+					<table class="bbs_table list"><!-- 리스트 게시판 클래스 list 추가 -->
+                        <caption>{장애코드관리} 목록 -  업체, 장애코드(MTC), LC코드, 장애내용, 기기장애조치방법, 장애구분순으로 정보를 제공</caption>
+                        <colgroup>
+                            <col style="width:250px;">
+                            <col style="width:250px;">
+                            <col style="width:200px;">
+                            <col style="width:250px;">
+                            <col style="width:250px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">업체</th>
+                                <th scope="col">장애코드(MTC)</th>
+                                <th scope="col">LC코드</th>
+                                <th scope="col">장애내용</th>
+                                <th scope="col">기기장애조치방법</th>
+                                <th scope="col">장애구분</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text_center"><!-- 리스트 기본 10개 -->
+                            <tr>
+                                <td>에이텍에이피</td>
+                                <td>00001</td>
+                                <td>73</td>
+                                <td class="text_left">미정의 코드</td>
+                                <td class="text_left">전원 off/on 후 운영</td>
+                                <td>통장부</td>
+                            </tr>
+                            <tr>
+                                <td>에이텍에이피</td>
+                                <td>01100</td>
+                                <td>29</td>
+                                <td class="text_left">명세표 미수취</td>
+                                <td class="text_left">자동회수됨</td>
+                                <td>고객미숙</td>
+                            </tr>
+                            <tr>
+                                <td>에이텍에이피</td>
+                                <td>01101</td>
+                                <td>19</td>
+                                <td class="text_left">카드 미수취</td>
+                                <td class="text_left">카드 제거 후 운영</td>
+                                <td>고객미숙</td>
+                            </tr>
+                            <tr>
+                                <td>에이텍에이피</td>
+                                <td>01102</td>
+                                <td>89</td>
+                                <td class="text_left">현금 미수취</td>
+                                <td class="text_left">현금 제거 후 운영</td>
+                                <td>고객미숙</td>
+                            </tr>
+                            <tr>
+                                <td>에이텍에이피</td>
+                                <td>01104</td>
+                                <td>D9</td>
+                                <td class="text_left">수표 미수취</td>
+                                <td class="text_left">수표 제거 후 운영</td>
+                                <td>고객미숙</td>
+                            </tr>
+                            <tr>
+                                <td>에이텍에이피</td>
+                                <td>01105</td>
+                                <td>79</td>
+                                <td class="text_left">통장 미수취</td>
+                                <td class="text_left">통장 제거 후 운영</td>
+                                <td>고객미숙</td>
+                            </tr>
+                            <tr>
+                                <td>에이텍에이피</td>
+                                <td>01106</td>
+                                <td>79</td>
+                                <td class="text_left">통장 명세표 미수취</td>
+                                <td class="text_left">통장 명세표 제거 후 운영</td>
+                                <td>고객미숙</td>
+                            </tr>
+                            <tr>
+                                <td>에이텍에이피</td>
+                                <td>01107</td>
+                                <td>79</td>
+                                <td class="text_left">통장 카드 미수취</td>
+                                <td class="text_left">계원확인</td>
+                                <td>고객미숙</td>
+                            </tr>
+                            <tr>
+                                <td>에이텍에이피</td>
+                                <td>01109</td>
+                                <td>89</td>
+                                <td class="text_left">현금수표 제거 후 운영</td>
+                                <td class="text_left">현금수표 제거 후 운영</td>
+                                <td>고객미숙</td>
+                            </tr>
+                        </tbody>
+                    </table>
+					<!--// table -->
+                    
+                    <p class="bbs_total">총합 :  <strong class="current">123</strong>페이지, <span class="total">123건</span></p>
+					<!--// bbs_total -->
+                    
+                    <div class="pagination">
+                        <a href="" class="prev_end">처음 페이지</a>
+                        <a href="" class="prev_one">이전 10 페이지</a>
+                        <strong title="현재 1페이지">1</strong> <!-- 현재 페이지 -->
+                        <a href="" title="2페이지 이동">2</a>
+                        <a href="" title="3페이지 이동">3</a>
+                        <a href="" title="4페이지 이동">4</a>
+                        <a href="" title="5페이지 이동">5</a>
+                        <a href="" title="6페이지 이동">6</a>
+                        <a href="" title="7페이지 이동">7</a>
+                        <a href="" title="8페이지 이동">8</a>
+                        <a href="" title="9페이지 이동">9</a>
+                        <a href="" title="10페이지 이동">10</a>
+                        <a href="" class="next_one">다음 10 페이지</a>
+                        <a href="" class="next_end">마지막 페이지</a>
+                    </div>
+                    <!-- //pagination -->
+
+                    <!--  btn_box  -->
+                    <div class="title_box">
+                        <h3>구분코드 등록</h3>
+                        <div class="btn_box justify_end">
+                            <!--<a href="" class="bbs_btn modify">수정</a>
+                            <a href="" class="bbs_btn write">등록</a>
+                            <a href="" class="bbs_btn delete">삭제</a>-->
+                            <button type="button" class="bbs_btn gray">등록</button>
+                            <button type="button" class="bbs_btn gray">수정</button>
+                            <button type="button" class="bbs_btn gray">삭제</button>
+                        </div>
+                        <!-- //btn_box  -->
+                    </div>
+                    <!-- //title_box  -->
+                    <div class="bbs_search">
+						<form>
+							<fieldset>
+								<legend>검색</legend>
+								<table>
+                                    <caption>검색 목록 - 구분코드, 구분코드명, 구분코드 사용여부, 구분코드 설명순으로 정보를 제공</caption>
+									<colgroup>
+										<col style="width:12%">
+										<col style="width:38%">
+										<col style="width:12%">
+										<col style="width:38%">
+									</colgroup>
+									<tbody>
+									  <tr>
+										  <th scope="row">구분코드</th>
+										  <td>
+                                            <label for="" class="skip">검색어 입력</label>
+                                            <input type="text" id="" class="w100" placeholder="12345">
+										  </td>
+                                          <th scope="row">구분코드명</th>
+										  <td>
+                                            <label for="" class="skip">검색어 입력</label>
+                                            <input type="text" id="" class="w100" placeholder="XXXXXXX">
+										  </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">구분코드 사용여부</th>
+                                            <td>
+                                                <label for="" class="skip">분류 선택</label>
+                                                <select id="" >
+                                                    <option value="">구분코드 사용여부 선택 </option>
+                                                </select>
+                                            </td>
+                                            <th scope="row">구분코드 설명</th>
+                                            <td>
+                                                <label for="" class="skip">검색어 입력</label>
+                                                <input type="text" id="" class="w100" placeholder="검색어를 입력하세요.">
+                                            </td>
+                                        </tr>
+									</tbody>
+								</table>
+							</fieldset>
+						</form>
+					</div>
+					<!-- //bbs_search -->
+
+				
+	
+				</div>
+				<!-- //contents -->
+			</article>
+		</main>
+		<!-- //main.colgroup -->
+	</div>
+	<!-- //wrap -->
+</div>
+<!-- //container -->
+
+</body>
+</html>

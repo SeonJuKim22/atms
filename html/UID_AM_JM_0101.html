@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력" >
+    <meta name="description" content="사이트 상세설명">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/import.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/style.js"></script>
+    <title>[저널관리 - 전자저널조회롤방식) ] - NH투자증권 ATMS</title>
+</head>
+
+<body id="sub" class="sub05"><!-- 1차메뉴 분류코드 sub01(운영관리), sub02(기기관리), sub03 sub04 sub05 ... 등으로  clsss 추가 -->
+<div class="accessibility">
+    <a href="#contents">본문 바로가기</a>
+    <a href="#lnb">주메뉴 바로가기</a>
+</div>
+
+<hr>
+
+<header id="header">
+    <div class="wrap clearfix">
+        <h1 class="logo"><a href=""><img src="images/common/logo.png" alt="NH투자증권 ATMS  LOGO"></a></h1>
+        <div class="gnb_box">
+            <h2 class="skip">gnb</h2>
+            <ul class="clearfix">
+                <li>
+                    <div class="search_box">
+                        <form method="post" action="">
+                        <fieldset>
+                            <legend>상단검색</legend>
+                            <input type="text" id="" name="" placeholder="메뉴검색" title="메뉴검색">
+                            <button type="button" class="search_btn">검색</button>
+                        </fieldset>
+                        </form>
+                    </div>
+                </li>
+                <li><span class="user_name"><em>김농협</em> 님 접속중</span></li>
+                <li><button type="button">로그아웃</button></li>
+            </ul>
+        </div>
+        <!--//gnb_box-->
+
+        <nav id="lnb_box">
+			<h2 class="skip">주메뉴</h2>
+			<div id="lnb">
+				<ul class="clearfix">
+					<li class="depth1"><a href="">운영관리</a></li>
+					<li class="depth1"><a href="">기기관리</a></li>
+					<li class="depth1"><a href="">원격관리</a></li>
+					<li class="depth1"><a href="">정보관리</a></li>
+					<li class="depth1"><a href=""  class="on">저널관리</a></li><!-- 현재 선택된 메뉴에 클래스 on 추가 -->
+				</ul>
+			</div>
+		</nav>
+		<!-- //lnb -->
+    </div>
+</header>
+<!-- //header -->
+
+<hr>
+
+<div id="container">
+    <div class="wrap">
+        <div id="side">
+            <div class="side_wrap">
+                <div class="side_title"><span>저널관리</span></div><!-- 1차 메뉴명이 들어갑니다.-->
+                <nav class="side_menu">
+                    <h2 class="skip">서브메뉴</h2>
+                    <ul class="dep1">
+                    <li><a href="" class="on"><span>전자저널조회</span></a></li><!-- 활성화시 on 처리-->
+                    <li><a href=""><span>화면조회이력</span></a></li>
+                    </ul>
+                </nav>
+                <!-- //side_menu -->
+                <div class="side_cont">
+                    <p>전화문의
+                      <span>02-1234-5678</span>
+                    </p>
+			  </div>
+			  <!--//side_cont-->
+            </div>
+			<!--//side_wrap -->
+        </div>
+		 <!-- //side -->
+ 
+		<main class="colgroup" id="colgroup">
+			<article>
+				<header class="sub_head">
+					<div class="sub_title"><h2>전자저널조회(롤방식)</h2></div><!-- 현재 페이지 메뉴명 -->
+				</header>
+				<!--// header -->
+
+				<div id="contents"><!-- 컨텐츠 시작-->
+					<!-- bbs_search-->
+					<div class="bbs_search">
+						<form>
+							<fieldset>
+								<div class="submit_box submit_top">
+									<button type="submit" class="submit">조회</button>
+								</div>
+								<legend>검색</legend>
+								<table>
+                                    <caption>팀점코드 찾기 검색 목록 - 팀점코드명 , 단말번호, 거래일자, 거래시간순으로 정보를 제공</caption>
+									<colgroup>
+										<col style="width:12%">
+										<col style="width:38%">
+										<col style="width:12%">
+										<col style="width:38%">
+									</colgroup>
+									<tbody>
+									  <tr>
+										  <th scope="row">팀점코드 / 명</th>
+										  <td>
+											  <div class="search_sel">
+												<span>
+												  <label for="" class="skip">팀점코드</label>
+												  <input type="text" id="" placeholder="123 or 1234 " style="width:100px">
+												</span>
+												<span>
+												  <label for="" class="skip">팀점명</label>
+												  <input type="text" id="" placeholder="영업부 법인센터" disabled>
+												</span>
+												<span>
+													<button type="button" class="bbs_btn small  bbs_popup_open">찾기</button>
+												</span>
+											  </div>
+										  </td>
+										  <th scope="row">단말번호</th>
+										  <td>
+											  <label for="" class="skip">분류 선택</label>
+											  <select id="">
+												  <option value="">선택</option>
+											  </select>
+										  </td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">거래일자</th>
+										  <td>
+                                                <div class="flex_box">
+                                                    <span class="calendar_box">
+                                                        <input type="text" id="bbs_search_day_s" placeholder="2022/10/31" title="검색 시작일 선택" readonly>
+                                                        <button type="button">달력에서 선택</button>
+                                                    </span>
+                                                    <em>~</em>
+                                                    <span class="calendar_box">
+                                                        <input type="text" id="bbs_search_day_f" placeholder="2022/10/31" title="검색 마지막일 선택" readonly>
+                                                        <button type="button">달력에서 선택</button>
+                                                    </span>
+                                                </div>
+										  </td>
+                                          <th scope="row">거래시간</th>
+										  <td>
+                                                <div class="flex_box thi">
+                                                    <span>
+                                                        <label for="" class="skip">거래시간 시작</label>
+                                                        <input type="text" name="" id="" placeholder="00:00" title="거래시간 시작">
+                                                    </span>
+                                                    <em>~</em>
+                                                    <span>
+                                                        <label for="" class="skip">거래시간 마감</label>
+                                                        <input type="text" name="" id="" placeholder="23:59" title="거래시간 마감">
+                                                    </span>
+                                                    <em class="text">(시:분)</em>
+                                                </div>
+										  </td>
+									  </tr>
+									</tbody>
+								</table>
+							</fieldset>
+						</form>
+					</div>
+					<!-- //bbs_search -->
+					
+					<!--  btn_box  -->
+					<div class="btn_box justify_end">
+                        <button type="button" class="bbs_btn navy">리스트방식조회</button>
+					</div>
+					<!-- //btn_box  -->
+
+                    <div class="print_wrap">
+                        <div class="print_box">
+                            <h3>저널파일조회</h3>
+                            <div class="page">
+                                <div class="subpage">
+                                        <p>
+                                            팀점코드 : XXXX<br>
+                                            단말번호 : XXXX1XXX<br>
+                                            거래명 : 계좌개설<br>
+                                            계좌번호 : XXXXXXXX<br>
+                                            매체 : 바이오<br><br>
+
+                                            거래가 정상 처리되었습니다.<br><br>
+
+                                            감사합니다.
+                                        </p>
+                                </div>
+                            </div>
+                             <!--  //page  -->
+                        </div>
+                         <!--  //print_box  -->
+                    </div>
+                    <!--  //print_wrap  -->
+
+				</div>
+				<!-- //contents -->
+			</article>
+		</main>
+		<!-- //main.colgroup -->
+	</div>
+		<!-- //wrap -->
+</div>
+<!-- //container -->
+
+</body>
+</html>

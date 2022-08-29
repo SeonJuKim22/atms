@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력" >
+    <meta name="description" content="사이트 상세설명">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/import.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/style.js"></script>
+    <title>[정보관리 - 권환관리 - 권한별메뉴관리] - NH투자증권 ATMS</title>
+</head>
+
+<body id="sub" class="sub04"><!-- 1차메뉴 분류코드 sub01(운영관리), sub02(기기관리), sub03 sub04 sub05 ... 등으로  clsss 추가 -->
+<div class="accessibility">
+    <a href="#contents">본문 바로가기</a>
+    <a href="#lnb">주메뉴 바로가기</a>
+</div>
+
+<hr>
+
+<header id="header">
+    <div class="wrap clearfix">
+        <h1 class="logo"><a href=""><img src="images/common/logo.png" alt="NH투자증권 ATMS  LOGO"></a></h1>
+        <div class="gnb_box">
+            <h2 class="skip">gnb</h2>
+            <ul class="clearfix">
+                <li>
+                    <div class="search_box">
+                        <form method="post" action="">
+                        <fieldset>
+                            <legend>상단검색</legend>
+                            <input type="text" id="" name="" placeholder="메뉴검색" title="메뉴검색">
+                            <button type="button" class="search_btn">검색</button>
+                        </fieldset>
+                        </form>
+                    </div>
+                </li>
+                <li><span class="user_name"><em>김농협</em> 님 접속중</span></li>
+                <li><button type="button">로그아웃</button></li>
+            </ul>
+        </div>
+        <!--//gnb_box-->
+
+        <nav id="lnb_box">
+			<h2 class="skip">주메뉴</h2>
+			<div id="lnb">
+				<ul class="clearfix">
+					<li class="depth1"><a href="">운영관리</a></li>
+					<li class="depth1"><a href="">기기관리</a></li>
+					<li class="depth1"><a href="">원격관리</a></li>
+					<li class="depth1"><a href=""   class="on">정보관리</a></li><!-- 현재 선택된 메뉴에 클래스 on 추가 -->
+					<li class="depth1"><a href="">저널관리</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- //lnb -->
+    </div>
+</header>
+<!-- //header -->
+
+<hr>
+
+<div id="container">
+    <div class="wrap">
+        <div id="side">
+            <div class="side_wrap">
+                <div class="side_title"><span>정보관리</span></div><!-- 1차 메뉴명이 들어갑니다.-->
+                <nav class="side_menu">
+                    <h2 class="skip">서브메뉴</h2>
+                    <ul class="dep1">
+                    <li><a href=""><span>팀점정보</span></a></li>
+                    <li><a href=""><span>기종관리</span></a></li>
+                    <li><a href=""><span>공통코드관리</span></a></li>
+                    <li><a href=""><span>장애코드관리</span></a></li>
+                    <li><a href="" ><span>메뉴관리</span></a></li>
+                    <li><a href="" ><span>사용자관리</span></a></li>
+                    <li><a href=""><span>자료실관리</span></a></li>
+                    <li><a href=""  class="on"><span>권한관리</span></a></li><!-- 활성화시 on 처리-->
+                    </ul>
+                </nav>
+                <!-- //side_menu -->
+                <div class="side_cont">
+                    <p>전화문의
+                      <span>02-1234-5678</span>
+                    </p>
+			  </div>
+			  <!--//side_cont-->
+            </div>
+			<!--//side_wrap -->
+        </div>
+		 <!-- //side -->
+ 
+		<main class="colgroup" id="colgroup">
+			<article>
+				<header class="sub_head">
+					<div class="sub_title"><h2>권한별메뉴관리</h2></div><!-- 현재 페이지 메뉴명 -->
+				</header>
+				<!--// header -->
+
+				<div id="contents"><!-- 컨텐츠 시작-->
+					<!-- bbs_search-->
+					<div class="bbs_search">
+						<form>
+							<fieldset>
+								<div class="submit_box submit_top">
+									<button type="submit" class="submit">등록</button>
+								</div>
+								<legend>검색</legend>
+								<table>
+                                    <caption>검색 목록 - 권한명순으로  정보를 제공</caption>
+									<colgroup>
+                                        <col style="width:150px">
+                                        <col >
+									</colgroup>
+									<tbody>
+                                        <tr>
+                                          <th scope="row">권한명</th>
+										  <td>
+                                                <label for="" class="skip">분류 선택</label>
+                                                <select id="" class="w250">
+                                                    <option value="">선택</option>
+                                                </select>
+                                        </td>
+                                        </tr>
+									</tbody>
+								</table>
+							</fieldset>
+						</form>
+					</div>
+					<!-- //bbs_search -->
+           
+                    <div class="board_group">
+                         <!-- 운영관리-  board_area-->
+                        <div class="board_area">
+                            <table class="bbs_table">
+                                <colgroup>
+                                    <col style="width:60%">
+                                    <col>
+                                </colgroup>
+                                <caption>{운영관리} 목록 -  개국현황, 장애현황, 일일거래내역, 일일장애내역순으로 정보를 제공</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" colspan="2">운영관리</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text_center">
+                                    <tr>
+                                        <th  scope="row">개국현황</th>
+                                        <td>  
+                                            <label for="" class="skip">분류 선택</label>
+                                            <select id="" class="w100">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th  scope="row">장애현황</th>
+                                        <td>  
+                                            <label for="" class="skip">분류 선택</label>
+                                            <select id="" class="w100">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th  scope="row">일일거래내역</th>
+                                        <td>  
+                                            <label for="" class="skip">분류 선택</label>
+                                            <select id="" class="w100">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th  scope="row">일일장애내역</th>
+                                        <td>  
+                                            <label for="" class="skip">분류 선택</label>
+                                            <select id="" class="w100">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                 
+                                </tbody>
+                            </table>
+                            <!--// table -->
+                        </div>
+                        <!--// board_area -->
+
+                        <!-- 기기관리-  board_area-->
+                        <div class="board_area">
+                            <table class="bbs_table">
+                                <colgroup>
+                                    <col style="width:60%">
+                                    <col>
+                                </colgroup>
+                                <caption>{기기관리} 목록 -  기기등록/변경,  기기현황 , 점별가동현황, 기기별가동현황순으로 정보를 제공</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" colspan="2">기기관리</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text_center">
+                                    <tr>
+                                        <th  scope="row">기기등록/변경</th>
+                                        <td>  
+                                            <label for="" class="skip">분류 선택</label>
+                                            <select id="" class="w100">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th  scope="row">기기현황</th>
+                                        <td>  
+                                            <label for="" class="skip">분류 선택</label>
+                                            <select id="" class="w100">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th  scope="row">점별가동현황</th>
+                                        <td>  
+                                            <label for="" class="skip">분류 선택</label>
+                                            <select id="" class="w100">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th  scope="row">기기별가동현황</th>
+                                        <td>  
+                                            <label for="" class="skip">분류 선택</label>
+                                            <select id="" class="w100">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                 
+                                </tbody>
+                            </table>
+                            <!--// table -->
+                        </div>
+                        <!--// board_area -->
+
+                        <!-- 원격관리 - board_area-->
+                        <div class="board_area">
+                            <table class="bbs_table">
+                                <colgroup>
+                                    <col style="width:60%">
+                                    <col>
+                                </colgroup>
+                                <caption>{원격관리} 목록 -  기기버전조회, 원격제어, 원격관리이력, 파일관리순으로 정보를 제공</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" colspan="2">원격관리</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text_center">
+                                    <tr>
+                                        <th  scope="row">기기버전조회</th>
+                                        <td>  
+                                            <label for="" class="skip">분류 선택</label>
+                                            <select id="" class="w100">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th  scope="row">원격제어</th>
+                                        <td>  
+                                            <label for="" class="skip">분류 선택</label>
+                                            <select id="" class="w100">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th  scope="row">원격관리이력</th>
+                                        <td>  
+                                            <label for="" class="skip">분류 선택</label>
+                                            <select id="" class="w100">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th  scope="row">파일관리</th>
+                                        <td>  
+                                            <label for="" class="skip">분류 선택</label>
+                                            <select id="" class="w100">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                 
+                                </tbody>
+                            </table>
+                            <!--// table -->
+                        </div>
+                           <!--// board_area -->
+
+                          <!-- 정보관리 - board_area-->
+                        <div class="board_area">
+                            <table class="bbs_table">
+                                <colgroup>
+                                    <col style="width:60%">
+                                    <col>
+                                </colgroup>
+                                <caption>{정보관리} 목록 -  팀점정보, 기종관리, 공통코드관리, 장애코드관리, 메뉴관리,  사용자관리,  자료실관리, 권한관리순으로 정보를 제공</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" colspan="2">정보관리</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text_center">
+                                    <tr>
+                                        <th  scope="row">팀점정보</th>
+                                        <td>  
+                                            <label for="" class="skip">분류 선택</label>
+                                            <select id="" class="w100">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th  scope="row">기종관리</th>
+                                        <td>  
+                                            <label for="" class="skip">분류 선택</label>
+                                            <select id="" class="w100">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th  scope="row">공통코드관리</th>
+                                        <td>  
+                                            <label for="" class="skip">분류 선택</label>
+                                            <select id="" class="w100">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th  scope="row">장애코드관리</th>
+                                        <td>  
+                                            <label for="" class="skip">분류 선택</label>
+                                            <select id="" class="w100">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th  scope="row">메뉴관리</th>
+                                        <td>  
+                                            <label for="" class="skip">분류 선택</label>
+                                            <select id="" class="w100">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th  scope="row">사용자관리</th>
+                                        <td>  
+                                            <label for="" class="skip">분류 선택</label>
+                                            <select id="" class="w100">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th  scope="row">자료실관리</th>
+                                        <td>  
+                                            <label for="" class="skip">분류 선택</label>
+                                            <select id="" class="w100">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th  scope="row">권한관리</th>
+                                        <td>  
+                                            <label for="" class="skip">분류 선택</label>
+                                            <select id="" class="w100">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--// table -->
+                        </div>
+                        <!--// board_area -->
+
+                          <!-- 저널관리 - board_area-->
+                        <div class="board_area">
+                            <table class="bbs_table">
+                                <colgroup>
+                                    <col style="width:60%">
+                                    <col>
+                                </colgroup>
+                                <caption>{저널관리} 목록 -  전자저널조회, 화면조회이력순으로 정보를 제공</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" colspan="2">저널관리</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text_center">
+                                    <tr>
+                                        <th  scope="row">전자저널조회</th>
+                                        <td>  
+                                            <label for="" class="skip">분류 선택</label>
+                                            <select id="" class="w100">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th  scope="row">화면조회이력</th>
+                                        <td>  
+                                            <label for="" class="skip">분류 선택</label>
+                                            <select id="" class="w100">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--// table -->
+                        </div>
+                           <!--// board_area -->
+                    </div>
+                    <!--// board_group -->
+				</div>
+				<!-- //contents -->
+			</article>
+		</main>
+		<!-- //main.colgroup -->
+	</div>
+	<!-- //wrap -->
+</div>
+<!-- //container -->
+
+</body>
+</html>

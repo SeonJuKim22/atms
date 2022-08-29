@@ -82,12 +82,12 @@
                     <p>전화문의
                       <span>02-1234-5678</span>
                     </p>
-                  </div>
-                  <!--//side_cont-->
+                 </div>
+                 <!--//side_cont-->
             </div>
+			<!--//side_wrap -->
         </div>
-    </di>
-    <!-- //side -->
+		<!--//side -->
 
         <main class="colgroup" id="colgroup">
             <article>
@@ -97,6 +97,7 @@
                 <!-- //header -->
 
                 <div id="contents"> <!-- contentst 시작 -->
+					 <!-- bbs_search -->
                     <div class="bbs_search">
                         <form>
                             <fieldset>
@@ -326,7 +327,7 @@
                     <div class="pagination">
                         <a href="" class="prev_end">처음 페이지</a>
                         <a href="" class="prev_one">이전 10 페이지</a>
-                        <strong title="현재 1페이지">1</strong>
+                        <strong title="현재 1페이지">1</strong><!--현재 페이지 -->
                         <a href="" title="2페이지 이동">2</a>
                         <a href="" title="3페이지 이동">3</a>
                         <a href="" title="4페이지 이동">4</a>
@@ -341,188 +342,190 @@
                     </div>
                     <!-- //pagination -->
                     
-                <!-- bbs_popup -->
-                  <div id="bbs_popup" class="bbs_popup"><!-- 새창 팝업으로 사용할 경우 클래스 new_open 추가 -->
-                    <section class="box_wrap" style="width:1000px;"><!-- 팝업 가로값 인라인 스타일로 작성(새창 팝업으로 사용할 경우 가로 값을 부모 클래스 bbs_popup에 추가하여 사용) -->
-                        <div class="title_area">
-                            <h1 class="title">팀점코드찾기</h1>
-                        </div>
-                        <div class="contents_area">
-                            <div class="inner">
-                                <div class="bbs_search">
-                                    <form>
-                                        <fieldset>
-                                            <legend>검색</legend>
-                                            <table>
-                                                <caption>검색</caption>
-                                                <colgroup>
-                                                    <col style="width:12%">
-                                                    <col>
-                                                </colgroup>
-                                                <tbody>
-                                                <tr>
-                                                    <th scope="row">조회구분</th>
-                                                    <td>
-                                                        <div class="flex_box">
-                                                            <span>
-                                                                <label for="" class="skip">분류 선택</label>
-                                                                <select id="">
-                                                                    <option value="">선택</option>
-                                                                </select>
-                                                            </span>
-                                                            <span>
-                                                                <button type="button" class="bbs_btn  small  bbs_popup_open">찾기</button>
-                                                            </span>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">팀점코드/명</th>
-                                                    <td>
-                                                        <div class="search_sel">
-                                                            <span>
-                                                                <label for="" class="skip">상위팀점</label>
-                                                                <input type="text" id="" placeholder="0001" style="width:100px">
-                                                            </span>
-                                                            <span>
-                                                                <label for="" class="skip">팀점명</label>
-                                                                <input type="text" id="" placeholder="영업부 법인센터" disabled>
-                                                            </span>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </fieldset>
-                                    </form>
-                                </div>
-                                <!-- //bbs_search -->
+					<!-- bbs_popup -->
+					<div id="bbs_popup" class="bbs_popup"><!-- 새창 팝업으로 사용할 경우 클래스 new_open 추가 -->
+						<section class="box_wrap" style="width:1000px;"><!-- 팝업 가로값 인라인 스타일로 작성(새창 팝업으로 사용할 경우 가로 값을 부모 클래스 bbs_popup에 추가하여 사용) -->
+							<div class="title_area">
+								<h1 class="title">팀점코드찾기</h1>
+							</div>
+							<div class="contents_area">
+								<div class="inner">
+									<div class="bbs_search">
+										<form>
+											<fieldset>
+												<legend>검색</legend>
+												<table>
+													<caption>검색</caption>
+													<colgroup>
+														<col style="width:12%">
+														<col>
+													</colgroup>
+													<tbody>
+													<tr>
+														<th scope="row">조회구분</th>
+														<td>
+															<div class="flex_box">
+																<span>
+																	<label for="" class="skip">분류 선택</label>
+																	<select id="">
+																		<option value="">선택</option>
+																	</select>
+																</span>
+																<span>
+																	<button type="button" class="bbs_btn  small  bbs_popup_open">찾기</button>
+																</span>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<th scope="row">팀점코드/명</th>
+														<td>
+															<div class="search_sel">
+																<span>
+																	<label for="" class="skip">상위팀점</label>
+																	<input type="text" id="" placeholder="0001" style="width:100px">
+																</span>
+																<span>
+																	<label for="" class="skip">팀점명</label>
+																	<input type="text" id="" placeholder="영업부 법인센터" disabled>
+																</span>
+															</div>
+														</td>
+													</tr>
+													</tbody>
+												</table>
+											</fieldset>
+										</form>
+									</div>
+									<!-- //bbs_search -->
 
-                                <table class="bbs_table list"><!-- 리스트 게시판 클래스 list 추가 -->
-                                    <caption>{게시판명} 목록 -  팀점, 상위팀점(코드, 코드명) 주소 순으로  정보 제공</caption>
-                                    <colgroup>
-                                        <col style="width:120px;">
-                                        <col style="width:120px;">
-                                        <col style="width:120px;">
-                                        <col style="width:120px;">
-                                        <col>
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th scope="col" colspan="2">팀점</th>
-                                            <th scope="col"  colspan="2">상위팀점</th>
-                                            <th scope="col" rowspan="2">주소</th>
-                                        </tr>
-                                        <tr>
-                                            <th scope="col">코드</th>
-                                            <th scope="col">코드명</th>
-                                            <th scope="col">코드</th>
-                                            <th scope="col">코드명</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="text_center"><!-- 리스트 10개씩 생성 -->
-                                        <tr>
-                                            <td>123</td>
-                                            <td>트윈 Branch</td>
-                                            <td>123</td>
-                                            <td>트윈 Branch</td>
-                                            <td class="subject">서울시 영등포구 여의대로 128 LG트윈타워 서관5층 (여의도동)</td><!-- 제목에는 class="subject" 명이 들어갑니다. -->
-                                        </tr>
-                                        <tr>
-                                            <td>123</td>
-                                            <td>트윈 Branch</td>
-                                            <td>123</td>
-                                            <td>트윈 Branch</td>
-                                            <td class="subject">서울시 영등포구 여의대로 128 LG트윈타워 서관5층 (여의도동)</td>
-                                        </tr>
-                                        <tr>
-                                            <td>123</td>
-                                            <td>트윈 Branch</td>
-                                            <td>123</td>
-                                            <td>트윈 Branch</td>
-                                            <td class="subject">서울시 영등포구 여의대로 128 LG트윈타워 서관5층 (여의도동)</td>
-                                        </tr>
-                                        <tr>
-                                            <td>123</td>
-                                            <td>트윈 Branch</td>
-                                            <td>123</td>
-                                            <td>트윈 Branch</td>
-                                            <td class="subject">서울시 영등포구 여의대로 128 LG트윈타워 서관5층 (여의도동)</td>
-                                        </tr>
-                                        <tr>
-                                            <td>123</td>
-                                            <td>트윈 Branch</td>
-                                            <td>123</td>
-                                            <td>트윈 Branch</td>
-                                            <td class="subject">서울시 영등포구 여의대로 128 LG트윈타워 서관5층 (여의도동)</td>
-                                        <tr>
-                                            <td>123</td>
-                                            <td>트윈 Branch</td>
-                                            <td>123</td>
-                                            <td>트윈 Branch</td>
-                                            <td class="subject">서울시 영등포구 여의대로 128 LG트윈타워 서관5층 (여의도동)</td>
-                                        </tr>
-                                        <tr>
-                                            <td>123</td>
-                                            <td>트윈 Branch</td>
-                                            <td>123</td>
-                                            <td>트윈 Branch</td>
-                                            <td class="subject">서울시 영등포구 여의대로 128 LG트윈타워 서관5층 (여의도동)</td>
-                                        </tr>
-                                        <tr>
-                                            <td>123</td>
-                                            <td>트윈 Branch</td>
-                                            <td>123</td>
-                                            <td>트윈 Branch</td>
-                                            <td class="subject">서울시 영등포구 여의대로 128 LG트윈타워 서관5층 (여의도동)</td>
-                                        </tr>
-                                        <tr>
-                                            <td>123</td>
-                                            <td>트윈 Branch</td>
-                                            <td>123</td>
-                                            <td>트윈 Branch</td>
-                                            <td class="subject">서울시 영등포구 여의대로 128 LG트윈타워 서관5층 (여의도동)</td>
-                                        </tr>
-                                    <!--<tr>
-                                        <td colspan="5" class="empty">검색된 데이터가 없습니다.</td>
-                                    </tr>-->
-                                    </tbody>
-                                </table>
-                                <!-- //bbs_default list -->
-                                <p class="bbs_unit">총합 :  <strong class="current">123</strong>페이지, <span class="total">123건</span></p>
-                                <!-- //bbs_unit -->
-                                <div class="pagination">
-                                    <a href="" class="prev_end">처음 페이지</a>
-                                    <a href="" class="prev_one">이전 10 페이지</a>
-                                    <strong title="현재 1페이지">1</strong>
-                                    <a href="" title="2페이지 이동">2</a>
-                                    <a href="" title="3페이지 이동">3</a>
-                                    <a href="" title="4페이지 이동">4</a>
-                                    <a href="" title="5페이지 이동">5</a>
-                                    <a href="" title="6페이지 이동">6</a>
-                                    <a href="" title="7페이지 이동">7</a>
-                                    <a href="" title="8페이지 이동">8</a>
-                                    <a href="" title="9페이지 이동">9</a>
-                                    <a href="" title="10페이지 이동">10</a>
-                                    <a href="" class="next_one">다음 10 페이지</a>
-                                    <a href="" class="next_end">마지막 페이지</a>
-                                </div>
-                                <!-- //pagination -->
-                            </div>
-                             <!-- //inner -->
-                        </div>
-                        <!--//contents_area-->
+									<table class="bbs_table list"><!-- 리스트 게시판 클래스 list 추가 -->
+										<caption>{게시판명} 목록 -  팀점, 상위팀점(코드, 코드명) 주소 순으로  정보 제공</caption>
+										<colgroup>
+											<col style="width:120px;">
+											<col style="width:120px;">
+											<col style="width:120px;">
+											<col style="width:120px;">
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col" colspan="2">팀점</th>
+												<th scope="col"  colspan="2">상위팀점</th>
+												<th scope="col" rowspan="2">주소</th>
+											</tr>
+											<tr>
+												<th scope="col">코드</th>
+												<th scope="col">코드명</th>
+												<th scope="col">코드</th>
+												<th scope="col">코드명</th>
+											</tr>
+										</thead>
+										<tbody class="text_center"><!-- 리스트 10개씩 생성 -->
+											<tr>
+												<td>123</td>
+												<td>트윈 Branch</td>
+												<td>123</td>
+												<td>트윈 Branch</td>
+												<td class="subject">서울시 영등포구 여의대로 128 LG트윈타워 서관5층 (여의도동)</td><!-- 제목에는 class="subject" 명이 들어갑니다. -->
+											</tr>
+											<tr>
+												<td>123</td>
+												<td>트윈 Branch</td>
+												<td>123</td>
+												<td>트윈 Branch</td>
+												<td class="subject">서울시 영등포구 여의대로 128 LG트윈타워 서관5층 (여의도동)</td>
+											</tr>
+											<tr>
+												<td>123</td>
+												<td>트윈 Branch</td>
+												<td>123</td>
+												<td>트윈 Branch</td>
+												<td class="subject">서울시 영등포구 여의대로 128 LG트윈타워 서관5층 (여의도동)</td>
+											</tr>
+											<tr>
+												<td>123</td>
+												<td>트윈 Branch</td>
+												<td>123</td>
+												<td>트윈 Branch</td>
+												<td class="subject">서울시 영등포구 여의대로 128 LG트윈타워 서관5층 (여의도동)</td>
+											</tr>
+											<tr>
+												<td>123</td>
+												<td>트윈 Branch</td>
+												<td>123</td>
+												<td>트윈 Branch</td>
+												<td class="subject">서울시 영등포구 여의대로 128 LG트윈타워 서관5층 (여의도동)</td>
+											<tr>
+												<td>123</td>
+												<td>트윈 Branch</td>
+												<td>123</td>
+												<td>트윈 Branch</td>
+												<td class="subject">서울시 영등포구 여의대로 128 LG트윈타워 서관5층 (여의도동)</td>
+											</tr>
+											<tr>
+												<td>123</td>
+												<td>트윈 Branch</td>
+												<td>123</td>
+												<td>트윈 Branch</td>
+												<td class="subject">서울시 영등포구 여의대로 128 LG트윈타워 서관5층 (여의도동)</td>
+											</tr>
+											<tr>
+												<td>123</td>
+												<td>트윈 Branch</td>
+												<td>123</td>
+												<td>트윈 Branch</td>
+												<td class="subject">서울시 영등포구 여의대로 128 LG트윈타워 서관5층 (여의도동)</td>
+											</tr>
+											<tr>
+												<td>123</td>
+												<td>트윈 Branch</td>
+												<td>123</td>
+												<td>트윈 Branch</td>
+												<td class="subject">서울시 영등포구 여의대로 128 LG트윈타워 서관5층 (여의도동)</td>
+											</tr>
+										<!--<tr>
+											<td colspan="5" class="empty">검색된 데이터가 없습니다.</td>
+										</tr>-->
+										</tbody>
+									</table>
+									<!-- //bbs_default list -->
+									<p class="bbs_unit">총합 :  <strong class="current">123</strong>페이지, <span class="total">123건</span></p>
+									<!-- //bbs_unit -->
+									<div class="pagination">
+										<a href="" class="prev_end">처음 페이지</a>
+										<a href="" class="prev_one">이전 10 페이지</a>
+										<strong title="현재 1페이지">1</strong>
+										<a href="" title="2페이지 이동">2</a>
+										<a href="" title="3페이지 이동">3</a>
+										<a href="" title="4페이지 이동">4</a>
+										<a href="" title="5페이지 이동">5</a>
+										<a href="" title="6페이지 이동">6</a>
+										<a href="" title="7페이지 이동">7</a>
+										<a href="" title="8페이지 이동">8</a>
+										<a href="" title="9페이지 이동">9</a>
+										<a href="" title="10페이지 이동">10</a>
+										<a href="" class="next_one">다음 10 페이지</a>
+										<a href="" class="next_end">마지막 페이지</a>
+									</div>
+									<!-- //pagination -->
+								</div>
+								 <!-- //inner -->
+							</div>
+							<!--//contents_area-->
 
-                        <div class="btn_box fixed denial">
-                            <button type="button" class="btn close"> 닫기</button>
-                            <button type="button" class="btn confirm">확인</button>
-                        </div>
-                        <!--//-btn_box -->
-                    </section>
-                </div>
-                <!-- //bbs_popup -->
-                </div>
-                <!-- //contents -->
+							<div class="btn_box fixed denial">
+								<button type="button" class="btn close"> 닫기</button>
+								<button type="button" class="btn confirm">확인</button>
+							</div>
+							<!--//-btn_box -->
+						</section>
+						</div>
+						<!-- //bbs_popup -->
+					</div>
+					<!-- //bbs_popup -->c
+				</div>
+				<!-- //contents -->
             </article>
         </main>
         <!-- //main.colgroup -->

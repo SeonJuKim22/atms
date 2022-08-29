@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력" >
+    <meta name="description" content="사이트 상세설명">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/import.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/style.js"></script>
+    <title>[기기관리 - 기기별가동현황] - NH투자증권 ATMS</title>
+</head>
+
+<body id="sub" class="sub02"><!-- 1차메뉴 분류코드 sub01(운영관리), sub02(기기관리), sub03 sub04 sub05 ... 등으로  clsss 추가 -->
+<div class="accessibility">
+    <a href="#contents">본문 바로가기</a>
+    <a href="#lnb">주메뉴 바로가기</a>
+</div>
+
+<hr>
+
+<header id="header">
+    <div class="wrap clearfix">
+        <h1 class="logo"><a href=""><img src="images/common/logo.png" alt="NH투자증권 ATMS  LOGO"></a></h1>
+        <div class="gnb_box">
+            <h2 class="skip">gnb</h2>
+            <ul class="clearfix">
+                <li>
+                    <div class="search_box">
+                        <form method="post" action="">
+                        <fieldset>
+                            <legend>상단검색</legend>
+                            <input type="text" id="" name="" placeholder="메뉴검색" title="메뉴검색">
+                            <button type="button" class="search_btn">검색</button>
+                        </fieldset>
+                        </form>
+                    </div>
+                </li>
+                <li><span class="user_name"><em>김농협</em> 님 접속중</span></li>
+                <li><button type="button">로그아웃</button></li>
+            </ul>
+        </div>
+        <!--//gnb_box-->
+
+        <nav id="lnb_box">
+			<h2 class="skip">주메뉴</h2>
+			<div id="lnb">
+				<ul class="clearfix">
+					<li class="depth1"><a href="">운영관리</a></li><!-- 현재 선택된 메뉴에 클래스 on 추가 -->
+					<li class="depth1"><a href=""  class="on">기기관리</a></li>
+					<li class="depth1"><a href="">원격관리</a></li>
+					<li class="depth1"><a href="">정보관리</a></li>
+					<li class="depth1"><a href="">저널관리</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- //lnb -->
+    </div>
+</header>
+<!-- //header -->
+
+<hr>
+
+<div id="container">
+    <div class="wrap">
+        <div id="side">
+            <div class="side_wrap">
+                <div class="side_title"><span>기기관리</span></div><!-- 1차 메뉴명이 들어갑니다.-->
+                <nav class="side_menu">
+                    <h2 class="skip">서브메뉴</h2>
+                    <ul class="dep1">
+                    <li><a href="" ><span>기기등록/변경</span></a></li>
+                    <li><a href=""><span>기기현황</span></a></li>
+                    <li><a href="" ><span>점별가동현황</span></a></li>
+                    <li><a href="" class="on"><span>기기별가동현황</span></a></li><!-- 활성화시 on 처리-->
+                    </ul>
+                </nav>
+                <!-- //side_menu -->
+                <div class="side_cont">
+                    <p>전화문의
+                      <span>02-1234-5678</span>
+                    </p>
+			  </div>
+			  <!--//side_cont-->
+            </div>
+			<!--//side_wrap -->
+        </div>
+		 <!-- //side -->
+ 
+		<main class="colgroup" id="colgroup">
+			<article>
+				<header class="sub_head">
+					<div class="sub_title"><h2>기기별가동현황</h2></div><!-- 현재 페이지 메뉴 -->
+				</header>
+				<!--// header -->
+
+				<div id="contents"><!-- 컨텐츠 시작-->
+					<!-- bbs_search-->
+					<div class="bbs_search">
+						<form>
+							<fieldset>
+								<div class="submit_box submit_top">
+									<button type="submit" class="submit">조회</button>
+								</div>
+								<legend>검색</legend>
+								<table>
+                                    <caption>팀점코드 찾기 검색 목록 - 팀점코드명 , 단말번호, 조회기간, 365구분순으로 정보를 제공</caption>
+									<colgroup>
+										<col style="width:12%">
+										<col style="width:38%">
+										<col style="width:12%">
+										<col style="width:38%">
+									</colgroup>
+									<tbody>
+									  <tr>
+										  <th scope="row">팀점코드 / 명</th>
+										  <td>
+											  <div class="search_sel">
+												<span>
+												  <label for="" class="skip">팀점코드</label>
+												  <input type="text" id="" placeholder="123 or 1234" style="width:100px">
+												</span>
+												<span>
+												  <label for="" class="skip">팀점명</label>
+												  <input type="text" id="" placeholder="영업부 법인센터" disabled>
+												</span>
+												<span>
+													<button type="button" class="bbs_btn small  bbs_popup_open">찾기</button>
+												</span>
+											  </div>
+										  </td>
+										  <th scope="row">단말번호</th>
+										  <td>
+											  <label for="" class="skip">분류 선택</label>
+											  <select id="">
+												  <option value="">선택</option>
+											  </select>
+										  </td>
+									  </tr>
+									  <tr>
+										  <th scope="row">조회기관</th>
+										  <td>
+                                             <div class="flex_box thi date">
+											 <span>
+                                                <select name="" id="" title="년도선택">
+                                                    <option value="">2022</option>
+                                                    <option value="">카테고리 선택</option>
+                                                    <option value="">카테고리 선택</option>
+                                                    <option value="">카테고리 선택</option>
+                                                </select>
+												 <em>년</em>
+											 </span>
+											  <span>
+                                              
+                                                <select name="" id="" title="시작 월">
+                                                    <option value="">01</option>
+                                                    <option value="">02</option>
+                                                    <option value="">03</option>
+                                                    <option value="">04</option>
+                                                    <option value="">05</option>
+                                                    <option value="">06</option>
+                                                    <option value="">07</option>
+                                                    <option value="">08</option>
+                                                    <option value="">09</option>
+                                                    <option value="">10</option>
+                                                    <option value="">11</option>
+                                                    <option value="">12</option>
+                                                </select>
+                                                <em>월</em>
+											</span>
+											<em class="text">~</em>
+											<span>
+                                                <select name="" id="" title="끝 월">
+                                                    <option value="">01</option>
+                                                    <option value="">02</option>
+                                                    <option value="">03</option>
+                                                    <option value="">04</option>
+                                                    <option value="">05</option>
+                                                    <option value="">06</option>
+                                                    <option value="">07</option>
+                                                    <option value="">08</option>
+                                                    <option value="">09</option>
+                                                    <option value="">10</option>
+                                                    <option value="">11</option>
+                                                    <option value="">12</option>
+                                                </select>
+                                                <em>월</em>
+											</span>
+                                            </div>
+										</td>
+                                        <th scope="row">365구분</th>
+                                        <td>
+                                            <label for="" class="skip">분류 선택</label>
+                                            <select id="">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                        </fieldset>
+                    </form>
+                </div>
+                <!-- //bbs_search -->
+					
+					<!--  btn_box  -->
+					<div class="btn_box justify_end">
+                        <button type="button" class="bbs_btn navy">일별가동상세</button>
+						<button type="button" class="bbs_btn excel">엑셀저장</button>
+					</div>
+					<!-- //btn_box  -->
+
+
+					<table class="bbs_table list"><!-- 리스트 게시판 클래스 list 추가 -->
+                        <caption>{점별가동현황 } 목록 -  팀점, 상위팀점(코드, 코드명), 단말번호, 365구분, 총운영시간, 총가동시간, 가동률, 기종순으로  정보 제공</caption>
+                        <colgroup>
+                            <col style="width:80px;">
+                            <col style="width:180px;">
+                            <col style="width:80px;">
+                            <col style="width:180px;">
+                            <col style="width:100px;">
+                            <col style="width:100px;">
+                            <col style="width:200px;">
+                            <col style="width:300px;">
+                            <col style="width:100px;">
+                            <col style="width:100px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col" colspan="2">팀점</th>
+                                <th scope="col"  colspan="2">상위팀점</th>
+                                <th scope="col" rowspan="2">단말번호</th>
+                                <th scope="col" rowspan="2">365구분</th>
+                                <th scope="col" rowspan="2">총운영시간</th>
+                                <th scope="col" rowspan="2">총가동시간</th>
+                                <th scope="col" rowspan="2">가동률</th>
+                                <th scope="col" rowspan="2">기종</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">코드</th>
+                                <th scope="col">코드명</th>
+                                <th scope="col">코드</th>
+                                <th scope="col">코드명</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text_center"><!-- 리스트 기본 10개 -->
+                            <tr>
+                                <td>123</td>
+                                <td>트윈 Branch</td>
+                                <td>123</td>
+                                <td>트윈 Branch</td>
+                                <td>STM11234</td>
+                                <td>점내</td>
+                                <td>16104시간</td>
+                                <td>15461시간 37분 29초</td>
+                                <td>96.01%</td>
+                                <td>LC95</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>영업부금융센터</td>
+                                <td>123</td>
+                                <td>영업부금융센터</td>
+                                <td>STM11234</td>
+                                <td>점내</td>
+                                <td>3811시간 30분</td>
+                                <td>3803시간 38분 13초</td>
+                                <td>99.79%</td>
+                                <td>LC95</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>영업부법인센터</td>
+                                <td>123</td>
+                                <td>영업부법인센터</td>
+                                <td>STM11234</td>
+                                <td>점내</td>
+                                <td>3811시간 30분</td>
+                                <td>3789시간 34분 19초</td>
+                                <td>99.42%</td>
+                                <td>LC95</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>마포WM센터</td>
+                                <td>123</td>
+                                <td>마포WM센터</td>
+                                <td>STM11234</td>
+                                <td>점내</td>
+                                <td>3811시간 30분</td>
+                                <td>3789시간 34분 19초</td>
+                                <td>99.42%</td>
+                                <td>LC95</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>홍대역WM센터</td>
+                                <td>123</td>
+                                <td>홍대역WM센터</td>
+                                <td>STM11234</td>
+                                <td>점내</td>
+                                <td>3811시간 30분</td>
+                                <td>3789시간 34분 19초</td>
+                                <td>99.42%</td>
+                                <td>LC95</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>이촌동WM센터</td>
+                                <td>123</td>
+                                <td>이촌동WM센터</td>
+                                <td>STM11234</td>
+                                <td>점내</td>
+                                <td>3811시간 30분</td>
+                                <td>3789시간 34분 19초</td>
+                                <td>99.42%</td>
+                                <td>LCxx</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>해운대WM센터</td>
+                                <td>123</td>
+                                <td>해운대WM센터</td>
+                                <td>STM11234</td>
+                                <td>점내</td>
+                                <td>3811시간 30분</td>
+                                <td>3789시간 34분 19초</td>
+                                <td>99.42%</td>
+                                <td>LCxx</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>상무WM센터</td>
+                                <td>123</td>
+                                <td>상무WM센터</td>
+                                <td>STM11234</td>
+                                <td>점내</td>
+                                <td>3811시간 30분</td>
+                                <td>3789시간 34분 19초</td>
+                                <td>99.42%</td>
+                                <td>LCxx</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>전주WM센터</td>
+                                <td>123</td>
+                                <td>전주WM센터</td>
+                                <td>STM11234</td>
+                                <td>점내</td>
+                                <td>3811시간 30분</td>
+                                <td>3789시간 34분 19초</td>
+                                <td>99.42%</td>
+                                <td>LCxx</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>강남대로WM센터</td>
+                                <td>123</td>
+                                <td>강남대로WM센터</td>
+                                <td>STM11234</td>
+                                <td>점내</td>
+                                <td>3811시간 30분</td>
+                                <td>3789시간 34분 19초</td>
+                                <td>99.42%</td>
+                                <td>LCxx</td>
+                            </tr>
+                        </tbody>
+                    </table>
+					<!--// table -->
+                    
+                    <p class="bbs_total">총합 :  <strong class="current">123</strong>페이지, <span class="total">123건</span></p>
+					<!--// bbs_total -->
+                    
+                    <div class="pagination">
+                        <a href="" class="prev_end">처음 페이지</a>
+                        <a href="" class="prev_one">이전 10 페이지</a>
+                        <strong title="현재 1페이지">1</strong> <!-- 현재 페이지 -->
+                        <a href="" title="2페이지 이동">2</a>
+                        <a href="" title="3페이지 이동">3</a>
+                        <a href="" title="4페이지 이동">4</a>
+                        <a href="" title="5페이지 이동">5</a>
+                        <a href="" title="6페이지 이동">6</a>
+                        <a href="" title="7페이지 이동">7</a>
+                        <a href="" title="8페이지 이동">8</a>
+                        <a href="" title="9페이지 이동">9</a>
+                        <a href="" title="10페이지 이동">10</a>
+                        <a href="" class="next_one">다음 10 페이지</a>
+                        <a href="" class="next_end">마지막 페이지</a>
+                    </div>
+                    <!-- //pagination -->
+				
+	
+				</div>
+				<!-- //contents -->
+			</article>
+		</main>
+		<!-- //main.colgroup -->
+	</div>
+		<!-- //wrap -->
+</div>
+<!-- //container -->
+
+</body>
+</html>

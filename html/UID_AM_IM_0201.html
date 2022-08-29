@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력">
+    <meta name="description" content="사이트 상세설명">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/import.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/style.js"></script>
+    <title>기종정보등록</title>
+</head>
+
+<body id="sub">
+
+
+
+
+    <div id="bbs_popup" class="bbs_popup new_open">
+        <!-- 새창 팝업으로 사용할 경우 클래스 new_open 추가 -->
+        <section class="box_wrap">
+            <!-- 팝업 가로값 인라인 스타일로 작성(새창 팝업으로 사용할 경우 가로 값을 부모 클래스 bbs_popup에 추가하여 사용) -->
+            <div class="title_area">
+                <h1 class="title">기종정보등록</h1>
+            </div>
+            <div class="contents_area">
+                <div class="inner">
+
+
+                    <form name="" id="" method="post">
+                        <fieldset>
+                            <legend>게시물 작성</legend>
+
+                            <table class="bbs_table write">
+                                <!-- 등록/수정 게시판 클래스 write 추가 -->
+                                <caption>{기종정보등록} 글쓰기 - 기종코드, 기종명, 기종구분, 제조업체, 장애인사용가능여부, 카메라, 장정맥. 신분증스캐너, A4프린터, NFC,
+                                    등록년월 입력</caption>
+                                <colgroup>
+                                    <col style="width:200px;">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"><label for="">기종코드</label></th>
+                                        <td><input type="text" name="" id="" placeholder="XXXXXXXX"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><label for="">기종명</label></th>
+                                        <td><input type="text" name="" id="" placeholder="LC95"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><label for="">제조업체</label></th>
+                                        <td>
+                                            <select name="" id="" title="셀렉트 선택">
+                                                <option value="선택">에이텍에이피</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><label for="">기종구분</label></th>
+                                        <td>
+                                            <select name="" id="" title="셀렉트 선택">
+                                                <option value="선택">업무STM</option>
+                                                <option value="선택2">상담STM</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><label for="">장애인사용가능여부</label></th>
+                                        <td>
+                                            <select name="" id="" title="셀렉트 선택">
+                                                <option value="선택">Y </option>
+                                                <option value="선택2">N</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><label for="">카메라</label></th>
+                                        <td>
+                                            <select name="" id="" title="셀렉트 선택">
+                                                <option value="선택">Y </option>
+                                                <option value="선택2">N</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><label for="">신분증스캐너</label></th>
+                                        <td>
+                                            <select name="" id="" title="셀렉트 선택">
+                                                <option value="선택">Y </option>
+                                                <option value="선택2">N</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><label for="">A4프린터</label></th>
+                                        <td>
+                                            <select name="" id="" title="셀렉트 선택">
+                                                <option value="선택">Y </option>
+                                                <option value="선택2">N</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><label for="">NFC</label></th>
+                                        <td>
+                                            <select name="" id="" title="셀렉트 선택">
+                                                <option value="선택">Y </option>
+                                                <option value="선택2">N</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><label for="">등록년월</label></th>
+                                        <td><input type="text" name="" id="" placeholder="2022/10" disabled></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- //bbs_table write -->
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+          
+        </section>
+        <div class="btn_box fixed denial">
+            <button type="button" class="btn close">취소</button>
+            <input type="submit" value="등록" class="btn  write">
+        </div>
+        <!--//-btn_box -->
+    </div>
+    <!-- //bbs_popup -->
+</body>
+
+</html>

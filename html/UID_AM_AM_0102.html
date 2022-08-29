@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력">
+    <meta name="description" content="사이트 상세설명">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/import.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/style.js"></script>
+    <title>기기내역변경</title>
+</head>
+
+<body id="sub">
+    <div id="bbs_popup" class="bbs_popup new_open">
+        <!-- 새창 팝업으로 사용할 경우 클래스 new_open 추가 -->
+        <section class="box_wrap">
+            <!-- 팝업 가로값 인라인 스타일로 작성(새창 팝업으로 사용할 경우 가로 값을 부모 클래스 bbs_popup에 추가하여 사용) -->
+            <div class="title_area">
+                <h1 class="title">기기내역변경</h1>
+            </div>
+            <div class="contents_area">
+                <div class="inner">
+                    <form name="" id="" method="post">
+                        <fieldset>
+                            <legend>게시물 작성</legend>
+                            <table class="bbs_table write">
+                                <!-- 등록/수정 게시판 클래스 write 추가 -->
+                                <caption>{신규설치등록} 글쓰기 - 변경구분, 장비관리번호, 제조업체, 기종, 기기IP, 팀점코드/명, 단말번호,365구분, 관리상태, 설치장소,
+                                    등록일/등록자, 변경일/변경자 입력</caption>
+                                <colgroup>
+                                    <col style="width:200px;">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"><label for="">변경구분</label></th>
+                                        <td>
+                                            <select name="" id="" title="셀렉트 선택">
+                                                <option value="선택">이전</option>
+                                                <option value="선택2">기기정보변경</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><label for="">장비관리번호</label></th>
+                                        <td><input type="text" name="" id="" placeholder="7T221234" disabled></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><label for="">제조업체</label></th>
+                                        <td><input type="text" name="" id="" placeholder="에이텍에이피" disabled></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><label for="">기종</label></th>
+                                        <td><input type="text" name="" id="" placeholder="LC95" disabled></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">기기IP</th>
+                                        <td>
+                                            <div class="phone">
+                                                <label for="" class="skip">기기IP 첫번째 3자리 입력</label>
+                                                <input type="text" name="" id="" title="기기IP 첫번째 3자리 입력"
+                                                    placeholder="192">
+                                                <label for="" class="skip">기기IP 두번째 3자리 입력</label>
+                                                <input type="text" name="" id="" title="기기IP 두번째 3자리 입력"
+                                                    placeholder="168">
+                                                <label for="" class="skip">기기IP 세번째 3자리 입력</label>
+                                                <input type="text" name="" id="" title="기기IP 세번째 3자리 입력"
+                                                    placeholder="111">
+                                                <label for="" class="skip">기기IP 네번째 3자리 입력</label>
+                                                <input type="text" name="" id="" title="기기IP 네번째 3자리 입력"
+                                                    placeholder="123">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><label for="">인풋</label></th>
+                                        <td>
+                                            <div class="search_sel">
+                                                <span>
+                                                    <label for="" class="skip">팀점코드</label>
+                                                    <input type="text" id="" placeholder="123 or 1234"
+                                                        style="width:200px">
+                                                </span>
+                                                <span>
+                                                    <label for="" class="skip">팀점명</label>
+                                                    <input type="text" id="" placeholder="영업부 법인센터" disabled>
+                                                </span>
+                                                <span>
+                                                    <button type="button"
+                                                        class="bbs_btn small  bbs_popup_open">찾기</button>
+                                                </span>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><label for="">단말번호</label></th>
+                                        <td>
+                                            <input type="text" name="" id="" placeholder="STM11234">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><label for="">365구분</label></th>
+                                        <td>
+                                            <select name="" id="" title="셀렉트 선택">
+
+                                                <option value="선택">점내</option>
+                                                <option value="선택2">점내365</option>
+                                                <option value="선택3">점외</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><label for="">관리상태</label></th>
+                                        <td>
+                                            <select name="" id="" title="셀렉트 선택">
+                                                <option value="선택">사용</option>
+                                                <option value="선택2">미사용</option>
+                                                <option value="선택3">폐기</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><label for="">설치장소</label></th>
+                                        <td class="subject"><input type="text" name="" id=""
+                                                placeholder="서울시 영등포구 여의대로 128 LG트윈타워 서관5층(여의도동)"></td>
+                                        <!-- 클래스 subject 가로 100% -->
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><label for="">등록일/등록자</label></th>
+                                        <td>
+                                            <input type="text" name="" id="" placeholder="" disabled>
+                                            <input type="text" name="" id="" placeholder="" disabled>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><label for="">변경일/변경자</label></th>
+                                        <td>
+                                            <input type="text" name="" id="" placeholder="" disabled>
+                                            <input type="text" name="" id="" placeholder="" disabled>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- //bbs_table write -->
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="btn_box fixed denial">
+            <button type="button" class="btn cancel"> 취소</button>
+            <input type="submit" value="등록" class="btn  write">
+        </div>
+        <!--//-btn_box -->
+    </div>
+    <!-- //bbs_popup -->
+</body>
+
+</html>

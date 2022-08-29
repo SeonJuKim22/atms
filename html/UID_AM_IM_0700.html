@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력" >
+    <meta name="description" content="사이트 상세설명">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/import.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/style.js"></script>
+    <title>[정보관리 - 자료실관리] - NH투자증권 ATMS</title>
+</head>
+
+<body id="sub" class="sub04"><!-- 1차메뉴 분류코드 sub01(운영관리), sub02(기기관리), sub03 sub04 sub05 ... 등으로  clsss 추가 -->
+<div class="accessibility">
+    <a href="#contents">본문 바로가기</a>
+    <a href="#lnb">주메뉴 바로가기</a>
+</div>
+
+<hr>
+
+<header id="header">
+    <div class="wrap clearfix">
+        <h1 class="logo"><a href=""><img src="images/common/logo.png" alt="NH투자증권 ATMS  LOGO"></a></h1>
+        <div class="gnb_box">
+            <h2 class="skip">gnb</h2>
+            <ul class="clearfix">
+                <li>
+                    <div class="search_box">
+                        <form method="post" action="">
+                        <fieldset>
+                            <legend>상단검색</legend>
+                            <input type="text" id="" name="" placeholder="메뉴검색" title="메뉴검색">
+                            <button type="button" class="search_btn">검색</button>
+                        </fieldset>
+                        </form>
+                    </div>
+                </li>
+                <li><span class="user_name"><em>김농협</em> 님 접속중</span></li>
+                <li><button type="button">로그아웃</button></li>
+            </ul>
+        </div>
+        <!--//gnb_box-->
+
+        <nav id="lnb_box">
+			<h2 class="skip">주메뉴</h2>
+			<div id="lnb">
+				<ul class="clearfix">
+					<li class="depth1"><a href="">운영관리</a></li>
+					<li class="depth1"><a href="">기기관리</a></li>
+					<li class="depth1"><a href="">원격관리</a></li>
+					<li class="depth1"><a href=""   class="on">정보관리</a></li><!-- 현재 선택된 메뉴에 클래스 on 추가 -->
+					<li class="depth1"><a href="">저널관리</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- //lnb -->
+    </div>
+</header>
+<!-- //header -->
+
+<hr>
+
+<div id="container">
+    <div class="wrap">
+        <div id="side">
+            <div class="side_wrap">
+                <div class="side_title"><span>정보관리</span></div><!-- 1차 메뉴명이 들어갑니다.-->
+                <nav class="side_menu">
+                    <h2 class="skip">서브메뉴</h2>
+                    <ul class="dep1">
+                    <li><a href=""><span>팀점정보</span></a></li>
+                    <li><a href=""><span>기종관리</span></a></li>
+                    <li><a href=""><span>공통코드관리</span></a></li>
+                    <li><a href=""><span>장애코드관리</span></a></li>
+                    <li><a href=""><span>메뉴관리</span></a></li>
+                    <li><a href="" ><span>사용자관리</span></a></li>
+                    <li><a href=""  class="on"><span>자료실관리</span></a></li><!-- 활성화시 on 처리-->
+                    <li><a href=""><span>권한관리</span></a></li>
+                    </ul>
+                </nav>
+                <!-- //side_menu -->
+                <div class="side_cont">
+                    <p>전화문의
+                      <span>02-1234-5678</span>
+                    </p>
+			  </div>
+			  <!--//side_cont-->
+            </div>
+			<!--//side_wrap -->
+        </div>
+		 <!-- //side -->
+ 
+		<main class="colgroup" id="colgroup">
+			<article>
+				<header class="sub_head">
+					<div class="sub_title"><h2>자료실관리</h2></div><!-- 현재 페이지 메뉴명 -->
+				</header>
+				<!--// header -->
+
+				<div id="contents"><!-- 컨텐츠 시작-->
+
+                    <div class="submit_top btn_box justify_end">
+                        <!--<a href="" class="bbs_btn modify">수정</a>
+                        <a href="" class="bbs_btn write">등록</a>
+                        <a href="" class="bbs_btn delete">삭제</a>-->
+                        <button type="button" class="bbs_btn gray">등록</button>
+                        <button type="button" class="bbs_btn gray">수정</button>
+                        <button type="button" class="bbs_btn gray">삭제</button>
+                    </div>
+                    <!-- //btn_box  -->
+
+
+
+					<table class="bbs_table list"><!-- 리스트 게시판 클래스 list 추가 -->
+                        <caption>{자료실관리} 목록 -  번호, 제목, 작성자, 작성일, 작성시간, 조회, 첨부파일, 일괄선택순으로 정보를 제공</caption>
+                        <colgroup>
+                            <col style="width:50px">
+                            <col style="width:200px">
+                            <col style="width:150px">
+                            <col style="width:150px">
+                            <col style="width:150px">
+                            <col style="width:150px">
+                            <col style="width:150px">
+                            <col style="width:80px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col" >번호</th>
+                                <th scope="col">제목</th>
+                                <th scope="col" >작성자</th>
+                                <th scope="col">작성일</th>
+                                <th scope="col">작성시각</th>
+                                <th scope="col">조회</th>
+                                <th scope="col">첨부파일</th>
+                                <th scope="col">
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="100" id="100">
+                                        <label for="100" class="skip">전체 선택</label>
+                                    </span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="text_center"><!-- 리스트 기본 10개 -->
+                            <tr>
+                                <td>1</td>
+                                <td class="subject">ATMS 사용메뉴얼</td><!-- 제목에는  class="subject"--->
+                                <td>XXX</td>
+                                <td>2022/10/10</td>
+                                <td>13:21:26</td>
+                                <td>3</td>
+                                <td>2개</td>
+                                <td>
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="100" id="101">
+                                        <label for="101" class="skip">현재 라인 선택</label>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td class="subject">ATMS 사용메뉴얼</td><!-- 제목에는  class="subject"--->
+                                <td>XXX</td>
+                                <td>2022/10/10</td>
+                                <td>13:21:26</td>
+                                <td>3</td>
+                                <td>2개</td>
+                                <td>
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="100" id="102">
+                                        <label for="102" class="skip">현재 라인 선택</label>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td class="subject">ATMS 사용메뉴얼</td><!-- 제목에는  class="subject"--->
+                                <td>XXX</td>
+                                <td>2022/10/10</td>
+                                <td>13:21:26</td>
+                                <td>3</td>
+                                <td>2개</td>
+                                <td>
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="100" id="103">
+                                        <label for="103" class="skip">현재 라인 선택</label>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td class="subject">ATMS 사용메뉴얼</td><!-- 제목에는  class="subject"--->
+                                <td>XXX</td>
+                                <td>2022/10/10</td>
+                                <td>13:21:26</td>
+                                <td>3</td>
+                                <td>2개</td>
+                                <td>
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="100" id="104">
+                                        <label for="104" class="skip">현재 라인 선택</label>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td class="subject">ATMS 사용메뉴얼</td><!-- 제목에는  class="subject"--->
+                                <td>XXX</td>
+                                <td>2022/10/10</td>
+                                <td>13:21:26</td>
+                                <td>3</td>
+                                <td>2개</td>
+                                <td>
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="100" id="105">
+                                        <label for="105" class="skip">현재 라인 선택</label>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td class="subject">ATMS 사용메뉴얼</td><!-- 제목에는  class="subject"--->
+                                <td>XXX</td>
+                                <td>2022/10/10</td>
+                                <td>13:21:26</td>
+                                <td>3</td>
+                                <td>2개</td>
+                                <td>
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="100" id="106">
+                                        <label for="106" class="skip">현재 라인 선택</label>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td class="subject">ATMS 사용메뉴얼</td><!-- 제목에는  class="subject"--->
+                                <td>XXX</td>
+                                <td>2022/10/10</td>
+                                <td>13:21:26</td>
+                                <td>3</td>
+                                <td>2개</td>
+                                <td>
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="100" id="107">
+                                        <label for="107" class="skip">현재 라인 선택</label>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td class="subject">ATMS 사용메뉴얼</td><!-- 제목에는  class="subject"--->
+                                <td>XXX</td>
+                                <td>2022/10/10</td>
+                                <td>13:21:26</td>
+                                <td>3</td>
+                                <td>2개</td>
+                                <td>
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="100" id="108">
+                                        <label for="108" class="skip">현재 라인 선택</label>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td class="subject">ATMS 사용메뉴얼</td><!-- 제목에는  class="subject"--->
+                                <td>XXX</td>
+                                <td>2022/10/10</td>
+                                <td>13:21:26</td>
+                                <td>3</td>
+                                <td>2개</td>
+                                <td>
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="100" id="109">
+                                        <label for="109" class="skip">현재 라인 선택</label>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td class="subject">ATMS 사용메뉴얼</td><!-- 제목에는  class="subject"--->
+                                <td>XXX</td>
+                                <td>2022/10/10</td>
+                                <td>13:21:26</td>
+                                <td>3</td>
+                                <td>2개</td>
+                                <td>
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="100" id="110">
+                                        <label for="110" class="skip">현재 라인 선택</label>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+					<!--// table -->
+                    
+                    <p class="bbs_total">총합 :  <strong class="current">123</strong>페이지, <span class="total">123건</span></p>
+					<!--// bbs_total -->
+                    
+                    <div class="pagination">
+                        <a href="" class="prev_end">처음 페이지</a>
+                        <a href="" class="prev_one">이전 10 페이지</a>
+                        <strong title="현재 1페이지">1</strong> <!-- 현재 페이지 -->
+                        <a href="" title="2페이지 이동">2</a>
+                        <a href="" title="3페이지 이동">3</a>
+                        <a href="" title="4페이지 이동">4</a>
+                        <a href="" title="5페이지 이동">5</a>
+                        <a href="" title="6페이지 이동">6</a>
+                        <a href="" title="7페이지 이동">7</a>
+                        <a href="" title="8페이지 이동">8</a>
+                        <a href="" title="9페이지 이동">9</a>
+                        <a href="" title="10페이지 이동">10</a>
+                        <a href="" class="next_one">다음 10 페이지</a>
+                        <a href="" class="next_end">마지막 페이지</a>
+                    </div>
+                    <!-- //pagination -->
+
+
+
+
+				
+	
+				</div>
+				<!-- //contents -->
+			</article>
+		</main>
+		<!-- //main.colgroup -->
+	</div>
+	<!-- //wrap -->
+</div>
+<!-- //container -->
+
+</body>
+</html>

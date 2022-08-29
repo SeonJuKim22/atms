@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력">
+    <meta name="description" content="사이트 상세설명">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/import.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/style.js"></script>
+    <title>사용자등록삭제</title>
+</head>
+
+<body id="sub">
+
+
+
+
+    <div id="bbs_popup" class="bbs_popup new_open">
+        <!-- 새창 팝업으로 사용할 경우 클래스 new_open 추가 -->
+        <section class="box_wrap">
+            <!-- 팝업 가로값 인라인 스타일로 작성(새창 팝업으로 사용할 경우 가로 값을 부모 클래스 bbs_popup에 추가하여 사용) -->
+            <div class="title_area">
+                <h1 class="title">사용자등록삭제</h1>
+            </div>
+            <div class="contents_area">
+                <div class="inner">
+
+
+                    <form name="" id="" method="post">
+                        <fieldset>
+                            <legend>게시물 작성</legend>
+                            <p class="bbs_unit"><span class="exactly y"></span>표시는 필수 입력사항입니다.</p>
+
+                            <table class="bbs_table write">
+                                <!-- 등록/수정 게시판 클래스 write 추가 -->
+                                <caption>{사용자등록삭제} - 직원번호, 직원명, 비밀번호, 비밀번호확인, 사용자등급, 소속팀점, 입력</caption>
+                                <colgroup>
+                                    <col style="width:150px">
+                                    <col>
+                                    <col style="width:150px">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"><label for="">직원번호</label><span class="exactly y"></span></th>
+                                        <td><input type="text" name="" id="" class="w100" disabled></td>
+                                        <th scope="row"><label for="">직원명</label><span class="exactly y"></span></th>
+                                        <td><input type="text" name="" id="" class="w100" disabled></td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row"><label for="">사용자등급</label><span class="exactly y"></span></th>
+                                        <td colspan="3">
+                                            <select name="" id="" title="셀렉트 선택">
+                                                <option value="선택">SUPER USER</option>
+                                                <option value="선택2">선택2</option>
+                                                <option value="선택3">선택3</option>
+                                                <option value="선택4">선택4</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><label for="">소속팀점</label></th>
+                                        <td colspan="3"><input type="text" name="" id="" disabled></td>
+                                        <!-- 클래스 subject 가로 100% -->
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="bbs_table write">
+                                <!-- 등록/수정 게시판 클래스 write 추가 -->
+                                <caption>{사용자등록} 글쓰기 - 직원번호, 직원명, 비밀번호, 비밀번호확인, 사용자등급, 소속팀점, 입력</caption>
+                                <colgroup>
+                                    <col style="width:200px">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"><label for="">관리자 비밀번호 확인</label><span class="exactly y"></span>
+                                        </th>
+                                        <td><input type="password" name="" id=""></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- //bbs_table write -->
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="btn_box fixed denial">
+            <input type="submit" value="확인" class="btn ">
+            <button type="button" class="btn close">닫기</button>
+        </div>
+        <!--//-btn_box -->
+    </div>
+    <!-- //bbs_popup -->
+</body>
+</html>

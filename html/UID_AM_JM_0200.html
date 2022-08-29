@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력" >
+    <meta name="description" content="사이트 상세설명">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/import.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/style.js"></script>
+    <title>[저널관리 - 화면조회이력 ] - NH투자증권 ATMS</title>
+</head>
+
+<body id="sub" class="sub05"><!-- 1차메뉴 분류코드 sub01(운영관리), sub02(기기관리), sub03 sub04 sub05 ... 등으로  clsss 추가 -->
+<div class="accessibility">
+    <a href="#contents">본문 바로가기</a>
+    <a href="#lnb">주메뉴 바로가기</a>
+</div>
+
+<hr>
+
+<header id="header">
+    <div class="wrap clearfix">
+        <h1 class="logo"><a href=""><img src="images/common/logo.png" alt="NH투자증권 ATMS  LOGO"></a></h1>
+        <div class="gnb_box">
+            <h2 class="skip">gnb</h2>
+            <ul class="clearfix">
+                <li>
+                    <div class="search_box">
+                        <form method="post" action="">
+                        <fieldset>
+                            <legend>상단검색</legend>
+                            <input type="text" id="" name="" placeholder="메뉴검색" title="메뉴검색">
+                            <button type="button" class="search_btn">검색</button>
+                        </fieldset>
+                        </form>
+                    </div>
+                </li>
+                <li><span class="user_name"><em>김농협</em> 님 접속중</span></li>
+                <li><button type="button">로그아웃</button></li>
+            </ul>
+        </div>
+        <!--//gnb_box-->
+
+        <nav id="lnb_box">
+			<h2 class="skip">주메뉴</h2>
+			<div id="lnb">
+				<ul class="clearfix">
+					<li class="depth1"><a href="">운영관리</a></li>
+					<li class="depth1"><a href="">기기관리</a></li>
+					<li class="depth1"><a href="">원격관리</a></li>
+					<li class="depth1"><a href="">정보관리</a></li>
+					<li class="depth1"><a href=""  class="on">저널관리</a></li><!-- 현재 선택된 메뉴에 클래스 on 추가 -->
+				</ul>
+			</div>
+		</nav>
+		<!-- //lnb -->
+    </div>
+</header>
+<!-- //header -->
+
+<hr>
+
+<div id="container">
+    <div class="wrap">
+        <div id="side">
+            <div class="side_wrap">
+                <div class="side_title"><span>저널관리</span></div><!-- 1차 메뉴명이 들어갑니다.-->
+                <nav class="side_menu">
+                    <h2 class="skip">서브메뉴</h2>
+                    <ul class="dep1">
+                    <li><a href=""><span>전자저널조회</span></a></li>
+                    <li><a href="" class="on"><span>화면조회이력</span></a></li><!-- 활성화시 on 처리-->
+                    </ul>
+                </nav>
+                <!-- //side_menu -->
+                <div class="side_cont">
+                    <p>전화문의
+                      <span>02-1234-5678</span>
+                    </p>
+			  </div>
+			  <!--//side_cont-->
+            </div>
+			<!--//side_wrap -->
+        </div>
+		 <!-- //side -->
+ 
+		<main class="colgroup" id="colgroup">
+			<article>
+				<header class="sub_head">
+					<div class="sub_title"><h2>화면조회이력</h2></div><!-- 현재 페이지 메뉴명 -->
+				</header>
+				<!--// header -->
+
+				<div id="contents"><!-- 컨텐츠 시작-->
+					<!-- bbs_search-->
+					<div class="bbs_search">
+						<form>
+							<fieldset>
+								<div class="submit_box submit_top">
+									<button type="submit" class="submit">조회</button>
+								</div>
+								<legend>검색</legend>
+								<table>
+                                    <caption>팀점코드 찾기 검색 목록 - 팀점코드명 , 등급, 직원번호, 직원명, 조회기간순으로 정보를 제공</caption>
+									<colgroup>
+										<col style="width:150px">
+                                        <col style="width:150px">
+                                        <col style="width:150px">
+                                        <col style="width:150px">
+                                        <col style="width:150px">
+                                        <col style="width:250px">
+									</colgroup>
+									<tbody>
+                                            <tr>
+                                                <th scope="row">팀점코드 / 명</th>
+                                                <td colspan="3">
+                                                    <div class="search_sel">
+                                                        <span>
+                                                            <label for="" class="skip">팀점코드</label>
+                                                            <input type="text" id="" placeholder="123 or 1234 " style="width:100px">
+                                                        </span>
+                                                        <span>
+                                                            <label for="" class="skip">팀점명</label>
+                                                            <input type="text" id="" placeholder="영업부 법인센터" disabled>
+                                                        </span>
+                                                        <span>
+                                                            <button type="button" class="bbs_btn small  bbs_popup_open">찾기</button>
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <th scope="row">등급</th>
+                                                <td>
+                                                    <label for="" class="skip">분류 선택</label>
+                                                    <select id="">
+                                                        <option value="">선택</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">직원번호</th>
+                                                <td>
+                                                    <label for="" class="skip">직원번호</label>
+                                                    <input type="text" id="" class="w100" placeholder="">
+                                                </td>
+                                                <th scope="row">직원명</th>
+                                                <td>
+                                                    <label for="" class="skip">직원명</label>
+                                                    <input type="text" id="" class="w100" placeholder="">
+                                                </td>
+                                                <th scope="row">조회기간</th>
+                                                <td>
+                                                    <div class="flex_box">
+                                                        <span class="calendar_box">
+                                                            <input type="text" id="bbs_search_day_s" placeholder="2022/10/31" title="검색 시작일 선택" readonly>
+                                                            <button type="button">달력에서 선택</button>
+                                                        </span>
+                                                        <em>~</em>
+                                                        <span class="calendar_box">
+                                                            <input type="text" id="bbs_search_day_f" placeholder="2022/10/31" title="검색 마지막일 선택" readonly>
+                                                            <button type="button">달력에서 선택</button>
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+									</tbody>
+								</table>
+							</fieldset>
+						</form>
+					</div>
+					<!-- //bbs_search -->
+					
+					<!--  btn_box  -->
+					<div class="btn_box justify_end">
+						<button type="button" class="bbs_btn excel">엑셀저장</button>
+					</div>
+					<!-- //btn_box  -->
+
+
+					<table class="bbs_table list"><!-- 리스트 게시판 클래스 list 추가 -->
+                        <caption>{화면조회이력} 목록 -  조회일시, 팀점, 상위팀점(코드, 코드명), 직원명, 사용자등급,  화면명, 대상팀점명, 대상단말번호, 조회번호순으로  정보 제공</caption>
+                        <colgroup>
+                            <col style="width:150px;">
+                            <col style="width:80px;">
+                            <col style="width:150px;">
+                            <col style="width:80px;">
+                            <col style="width:150px;">
+                            <col style="width:100px;">
+                            <col style="width:150px;">
+                            <col style="width:150px;">
+                           <col style="width:150px;">
+                           <col style="width:150px;">
+                           <col style="width:200px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col" rowspan="2">조회일시</th>
+                                 <th scope="col" colspan="2">팀점</th>
+                                <th scope="col"  colspan="2">상위팀점</th>
+                                <th scope="col" rowspan="2">직원명</th>
+                                <th scope="col" rowspan="2">사용자등급</th>
+                                <th scope="col" rowspan="2">화면명</th>
+                                <th scope="col" rowspan="2">대상<br>팀점명</th>
+                                <th scope="col" rowspan="2">대상<br>단말번호</th>
+                                <th scope="col" rowspan="2">조회번호</th>
+                            </tr>
+                            <tr>
+                                <th scope="col" class="first">코드</th>
+                                <th scope="col">코드명</th>
+                                <th scope="col">코드</th>
+                                <th scope="col">코드명</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text_center"><!-- 리스트 기본 10개 -->
+                            <tr>
+                                <td>202210/31 00:00:00</td>
+                                <td>1234</td>
+                                <td>트윈 Branch</td>
+                                <td>123</td>
+                                <td>트윈 Branch</td>
+                                <td>김농협</td>
+                                <td>SUPER USER</td>
+                                <td>전자저널조회</td>
+                                <td>트윈 Branch</td>
+                                <td>12341xxx</td>
+                                <td>팀점명, 단말번호, 거래일시</td>
+                            </tr>
+                            <tr>
+                                <td>202210/31 00:00:00</td>
+                                <td>1234</td>
+                                <td>NH금융PLU</td>
+                                <td>123</td>
+                                <td>NH금융PLU</td>
+                                <td>김농협</td>
+                                <td>SUPER USER</td>
+                                <td>전자저널조회</td>
+                                <td>영업부금융센터</td>
+                                <td>12341xxx</td>
+                                <td>팀점명, 단말번호, 거래일시</td>
+                            </tr>
+                            <tr>
+                                <td>202210/31 00:00:00</td>
+                                <td>1234</td>
+                                <td>영업부법인센터</td>
+                                <td>123</td>
+                                <td>영업부법인센터</td>
+                                <td>김농협</td>
+                                <td>SUPER USER</td>
+                                <td>전자저널조회</td>
+                                <td>영업부금융센터</td>
+                                <td>12341xxx</td>
+                                <td>팀점명, 단말번호, 거래일시</td>
+                            </tr>
+                            <tr>
+                                <td>202210/31 00:00:00</td>
+                                <td>1234</td>
+                                <td>마포WM센터</td>
+                                <td>123</td>
+                                <td>마포WM센터</td>
+                                <td>김농협</td>
+                                <td>SUPER USER</td>
+                                <td>전자저널조회</td>
+                                <td>마포WM센터</td>
+                                <td>12341xxx</td>
+                                <td>팀점명, 단말번호, 거래일시</td>
+                            </tr>
+                            <tr>
+                                <td>202210/31 00:00:00</td>
+                                <td>1234</td>
+                                <td>홍대역WM센터</td>
+                                <td>123</td>
+                                <td>홍대역WM센터</td>
+                                <td>김농협</td>
+                                <td>SUPER USER</td>
+                                <td>전자저널조회</td>
+                                <td>영업부금융센터</td>
+                                <td>12341xxx</td>
+                                <td>팀점명, 단말번호, 거래일시</td>
+                            </tr>
+                            <tr>
+                                <td>202210/31 00:00:00</td>
+                                <td>1234</td>
+                                <td>이촌동WM센터</td>
+                                <td>123</td>
+                                <td>이촌동WM센터</td>
+                                <td>김농협</td>
+                                <td>SUPER USER</td>
+                                <td>전자저널조회</td>
+                                <td>영업부금융센터</td>
+                                <td>12341xxx</td>
+                                <td>팀점명, 단말번호, 거래일시</td>
+                            </tr>
+                            <tr>
+                                <td>202210/31 00:00:00</td>
+                                <td>1234</td>
+                                <td>트윈 Branch</td>
+                                <td>123</td>
+                                <td>트윈 Branch</td>
+                                <td>김농협</td>
+                                <td>SUPER USER</td>
+                                <td>전자저널조회</td>
+                                <td>트윈 Branch</td>
+                                <td>12341xxx</td>
+                                <td>팀점명, 단말번호, 거래일시</td>
+                            </tr>
+                            <tr>
+                                <td>202210/31 00:00:00</td>
+                                <td>1234</td>
+                                <td>트윈 Branch</td>
+                                <td>123</td>
+                                <td>트윈 Branch</td>
+                                <td>김농협</td>
+                                <td>SUPER USER</td>
+                                <td>전자저널조회</td>
+                                <td>트윈 Branch</td>
+                                <td>12341xxx</td>
+                                <td>팀점명, 단말번호, 거래일시</td>
+                            </tr>
+                            <tr>
+                                <td>202210/31 00:00:00</td>
+                                <td>1234</td>
+                                <td>트윈 Branch</td>
+                                <td>123</td>
+                                <td>트윈 Branch</td>
+                                <td>김농협</td>
+                                <td>SUPER USER</td>
+                                <td>전자저널조회</td>
+                                <td>트윈 Branch</td>
+                                <td>12341xxx</td>
+                                <td>팀점명, 단말번호, 거래일시</td>
+                            </tr>
+                            <tr>
+                                <td>202210/31 00:00:00</td>
+                                <td>1234</td>
+                                <td>트윈 Branch</td>
+                                <td>123</td>
+                                <td>트윈 Branch</td>
+                                <td>김농협</td>
+                                <td>SUPER USER</td>
+                                <td>전자저널조회</td>
+                                <td>트윈 Branch</td>
+                                <td>12341xxx</td>
+                                <td>팀점명, 단말번호, 거래일시</td>
+                            </tr>
+                        </tbody>
+                    </table>
+					<!--// table -->
+                    
+                    <p class="bbs_total">총합 :  <strong class="current">123</strong>페이지, <span class="total">123건</span></p>
+					<!--// bbs_total -->
+                    
+                    <div class="pagination">
+                        <a href="" class="prev_end">처음 페이지</a>
+                        <a href="" class="prev_one">이전 10 페이지</a>
+                        <strong title="현재 1페이지">1</strong> <!-- 현재 페이지 -->
+                        <a href="" title="2페이지 이동">2</a>
+                        <a href="" title="3페이지 이동">3</a>
+                        <a href="" title="4페이지 이동">4</a>
+                        <a href="" title="5페이지 이동">5</a>
+                        <a href="" title="6페이지 이동">6</a>
+                        <a href="" title="7페이지 이동">7</a>
+                        <a href="" title="8페이지 이동">8</a>
+                        <a href="" title="9페이지 이동">9</a>
+                        <a href="" title="10페이지 이동">10</a>
+                        <a href="" class="next_one">다음 10 페이지</a>
+                        <a href="" class="next_end">마지막 페이지</a>
+                    </div>
+                    <!-- //pagination -->
+				
+	
+				</div>
+				<!-- //contents -->
+			</article>
+		</main>
+		<!-- //main.colgroup -->
+	</div>
+		<!-- //wrap -->
+</div>
+<!-- //container -->
+
+</body>
+</html>

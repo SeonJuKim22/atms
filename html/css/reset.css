@@ -10,7 +10,7 @@ audio,canvas,progress,video{display:inline-block;}
 html,body,div,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ol,ul,li,blockquote,pre,button,fieldset,form,legend,table,caption,tbody,tfoot,thead,tr,th,td,iframe,article,aside,canvas,details,embed,figure,figcaption,header,main,footer,menu,nav,section,summary,audio,video,code{margin:0;padding:0;border:0;font-size:inherit;font-family:inherit;vertical-align:baseline;}
 
 html{font-size:10px;}
-body{font-size:16px;line-height:1.5;font-family:'Spoqa','맑은고딕',Malgun Gothic;color:#3F474D;}
+body{font-size:16px;line-height:1.5;font-family:'Spoqa','맑은고딕',Malgun Gothic;color:#3F474D; }
 img,fieldset{border:none;}
 figure,figcaption{margin:0;padding:0;}
 b,strong{font-weight:600;}
